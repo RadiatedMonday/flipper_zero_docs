@@ -1736,6 +1736,8 @@ To sign in to your account with Flipper Zero, do the following:
 
 Приложения - это каталог, в котором собраны инструменты и игры, разработанные сообществом Flipper Zero. Вы можете получить доступ к приложениям из [Flipper Mobile App](https://docs.flipper.net/mobile-app "Flipper Mobile App") and [Flipper Lab](https://lab.flipper.net "Flipper Lab")
 
+Также существуют альтернативные магазины приложений https://flipp-app.onrender.com/ и https://flipc.org/. Большую часть времени не работают.
+
 ![[flipper-zero-apps-mobile-and-desktop-1.webp]]
 
 ## Bluetooth
