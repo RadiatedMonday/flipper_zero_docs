@@ -1585,13 +1585,13 @@ As a bonus, ESP32-S2 allows Wi-Fi penetration testing (PMKID capturing, deauth, 
 
 - [https://shop.flipperzero.one/products/wifi-devboard](https://shop.flipperzero.one/products/wifi-devboard)
 
-### Official Purpose Of The Wi-Fi Development Board[¶](https://flipper.wiki/wifi-devboard/#official-purpose-of-the-wi-fi-development-board "Permanent link")
+### Official Purpose Of The Wi-Fi Development Board
 
 The official Wi-Fi development board sold by Flipper Devices is geared primarily for debugging firmware and application for the Flipper Zero. Due to this, it arrives pre-flashed with the [BlackMagic](https://github.com/flipperdevices/blackmagic-esp32-s2) firmware to enable both wired and wireless debugging.
 
 Documentation for how to begin debugging with the board can be found in the [official flipper zero documentation](https://developer.flipper.net/flipperzero/doxygen/dev_board_get_started.html).
 
-### Community Uses For The Board[¶](https://flipper.wiki/wifi-devboard/#community-uses-for-the-board "Permanent link")
+### Community Uses For The Board
 
 If one does not desire to do development with the board or wants to try a different use for the board, it is possible to flash the Wi-Fi board with alternate firmware to try new functions.
 
@@ -1601,7 +1601,7 @@ The following is a partial list of a few popular community firmware that one may
 - [FlipperHTTP](https://github.com/jblanked/FlipperHTTP), a multi-purpose firmware that uses HTTP requests to retrieve information from websites, download applications from the catalog, connect with users on social media platforms, and extract data from APIs.
 - [GhostESP](https://github.com/Spooks4576/Ghost_ESP), a firmware that provides tools to perform comprehensive Wi-Fi and Bluetooth Low Energy (BLE) analysis, execute targeted wireless tests, and explore dynamic wireless environments.
 
-### Useful Links[¶](https://flipper.wiki/wifi-devboard/#useful-links "Permanent link")
+### Useful Links
 
 - [FZEE flasher](https://fzeeflasher.com/), an easy web based ESP flasher for installing popular firmware with only a few clicks.
 - [EspWebTool](https://esp.huhn.me/), a more manual and general purpose web flasher tool for all ESP32 devices, requires having pre-built firmware binaries.
@@ -1625,13 +1625,13 @@ The following is a partial list of a few popular community firmware that one may
 
 
 
-## Buy a ready-made module[¶](https://awesome-flipper.com/extra/module/external-radio-433/#buy-a-ready-made-module "Permanent link")
+### Buy a ready-made module
 
 - [Individual Antennas & CC1101 Modules](https://www.tindie.com/products/tehrabbitt/individual-antennas-cc1101-modules/) based on Genuine EBYTE CC1101 Modules
 - [Rabbit-Labs™ - Flux Capacitor - Amplified CC1101](https://www.tindie.com/products/tehrabbitt/rabbit-labs-flux-capacitor-amplified-cc1101/) is a 5v powered, External CC1101 Module based on the E07-433M20S Chipset, offering up to 100mW of power. Receive and send signals between 425-450MHz
 - [CC1101 shielded module for 433Mhz by ruckus // section80 in Australia](https://www.tindie.com/products/ruckus/cc1101-shielded-module/)
 
-## Do-it-yourself[¶](https://awesome-flipper.com/extra/module/external-radio-433/#do-it-yourself "Permanent link")
+### Do-it-yourself
 
 You can build this module yourself, if you have a soldering iron, a solder, and the CC1101 module itself.
 
