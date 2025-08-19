@@ -1509,8 +1509,10 @@ https://habr.com/ru/news/810815/
 ![[Flipper Zero Controlling Traffic Lights.mp4]]
 
 ## W5500
-TODO
-https://habr.com/ru/articles/864790/
+
+С помощью специального модуля, можно проверить интернет кабель на наличие подключения к локальной компьютерной сети или к интернету, а так же получить IP адрес по DHCP и измерить ping.
+
+
 
 ## nrf24l01
 ![[nrf24l01.png]]
