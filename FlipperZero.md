@@ -1608,6 +1608,42 @@ The following is a partial list of a few popular community firmware that one may
 - [Ghost ESP Flasher](https://flasher.spookytools.com/), Online flasher for flashing GhostESP to supported ESP32 devices.
 
 
+## External Radio Module for 433 MHz aka CC1101
+
+У Flipper Zero есть встроенный модуль для работы в диапазоне до 1 ГГц (поэтому и Sub-GHz) на основе приемопередатчика CC1101 и встроенной антенны. Встроенный CC1101 и антенна рассчитаны на работу в диапазонах частот 300-348 МГц, 387-464 МГц и 779-928 МГц. Но, как мы знаем, чем более универсален инструмент, тем меньше он подходит под решение конкретной задачи. Так получилось и тут – команда Flipper Devices Inc. провела огромную работу, чтобы покрыть весь УКВ диапазон частот с помощью одной антенны. Но, если вы хотите работать именно на ±433MHz, то вам нужна другая антенна, настроенная на эту конкретную частоту. На наш взгляд, это будет значительно эффективнее, ведь на ±433MHz у встроенной антенны самые компромиссные показатели.
+
+![[subghz_antenna.png]]
+*Визуальное сравнение внутренней антенны и от внешнего модуля
+
+Замеры внутренней антенны флиппера показывают что средняя дистанция приёма-передачи составляет около 6-15 метров при указанной мощности.
+
+### CC1101 с внешней антенной, а на самом деле E07-M1101D-SMA
+
+> Важно отметить, что внешний модуль почему‑то все называют CC1101 ака «ЦЦшка», хотя это только название микросхемы (IC, Integrated circuit), которая стоит внутри флиппера и на которой основаны оба модуля (если хотите — сборки) E07-M1101D‑SMA и E07–433M20S. И сейчас вам начинает казаться, «а зачем мне про это душнят», да? А затем, что дальше будет инфа про другой внешний модуль с усилителем, который все называют E07, но он носит официальную маркировку E07–433M20S. И важно не запутаться, что такое E07, а что CC1101. Но вроде все договорились называть простой модуль без усилителя — CC1101, а с усилителем сигнала — E07:) А пока писали статью, появился ещё модуль E07–400MM10S, который до нас уже назвали E07–400 ¯_(ツ)_/¯_
+
+Если внимательно посмотреть на модуль и плату-переходник, которая идёт в составе, (ведь реверс-инжиниринг никто нам не запрещал), то по рассыпухе можно увидеть, что важная часть модуля – это понижайка до напряжения 3,3В. В мануале к микросхеме E07-M1101D-SMA указано, что работает она именно от этого напряжения, а также, что преобразователь – линейный, что благотворно сказывается на уровне шумов при приёме.
+
+
+
+## Buy a ready-made module[¶](https://awesome-flipper.com/extra/module/external-radio-433/#buy-a-ready-made-module "Permanent link")
+
+- [Individual Antennas & CC1101 Modules](https://www.tindie.com/products/tehrabbitt/individual-antennas-cc1101-modules/) based on Genuine EBYTE CC1101 Modules
+- [Rabbit-Labs™ - Flux Capacitor - Amplified CC1101](https://www.tindie.com/products/tehrabbitt/rabbit-labs-flux-capacitor-amplified-cc1101/) is a 5v powered, External CC1101 Module based on the E07-433M20S Chipset, offering up to 100mW of power. Receive and send signals between 425-450MHz
+- [CC1101 shielded module for 433Mhz by ruckus // section80 in Australia](https://www.tindie.com/products/ruckus/cc1101-shielded-module/)
+
+## Do-it-yourself[¶](https://awesome-flipper.com/extra/module/external-radio-433/#do-it-yourself "Permanent link")
+
+You can build this module yourself, if you have a soldering iron, a solder, and the CC1101 module itself.
+
+- External CC1101 with external SMA antenna. Everyone mostly uses this module, based on [Ebyte 10dBm 530m CC1101 Rf 433MHz Fsk](https://www.cdebyte.com/products/E07-M1101D-SMA/2).
+- Cables, breadboard as a AMS1117-3.3, solder.
+
+To build a working module, follow the pinout as shown in the image below
+
+![[Ebyte-CC1101-impr.png]]
+
+
+
 ---
 
 # iButton
