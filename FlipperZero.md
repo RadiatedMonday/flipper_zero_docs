@@ -1485,9 +1485,6 @@ Pin 1 запитан от встроенного аккумулятора или
 - **5V on GPIO:** enable/disable +5 V power supply to pin 1. See [this section](https://docs.flipperzero.one/gpio-and-modules#brgPY "this section") for more information.
 
 
-## Открытие электронного сейфа с помощью Flipper Zero с использованием уязвимости в протоколе управления контроллера (UA)
-
-https://www.youtube.com/watch?v=trpOoM6ugnk
 
 
 
@@ -1999,6 +1996,12 @@ https://lab.flipper.net/apps/eth_troubleshooter
 
 https://github.com/bigbrodude6119/flipper-zero-evil-portal
 
+### Sentry Safe
+
+Открытие электронного сейфа фирмы Sentry с помощью Flipper Zero с использованием уязвимости в протоколе управления контроллера (UART)
+
+Подробности в видео:
+https://www.youtube.com/watch?v=trpOoM6ugnk
 
 
 ## Key Copier
