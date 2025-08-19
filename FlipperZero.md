@@ -1,6 +1,5 @@
 TODO:
 
-- Add https://flipper.wiki/
 - Add https://github.com/djsime1/awesome-flipperzero
 - Add https://awesome-flipper.com/
 
@@ -119,6 +118,7 @@ TODO:
 		3. [[#Универсальный пульт#Projector remote|Projector remote]]
 		4. [[#Универсальный пульт#Air conditioner remote|Air conditioner remote]]
 	6. [[#Infrared#Пульты из мобильного приложения|Пульты из мобильного приложения]]
+	7. [[#Infrared#Ссылки|Ссылки]]
 7. [[#Bluetooth|Bluetooth]]
 	1. [[#Bluetooth#BLE Spam|BLE Spam]]
 		1. [[#BLE Spam#SEX TOYS|SEX TOYS]]
@@ -129,10 +129,14 @@ TODO:
 		3. [[#GPIO pinout#Input/output pins|Input/output pins]]
 		4. [[#GPIO pinout#3.3 V and 5 V tolerance|3.3 V and 5 V tolerance]]
 	2. [[#GPIO & modules#GPIO menu|GPIO menu]]
-	3. [[#GPIO & modules#Вскрываем сейф|Вскрываем сейф]]
-	4. [[#GPIO & modules#Взлом светофоров|Взлом светофоров]]
-	5. [[#GPIO & modules#W5500|W5500]]
-	6. [[#GPIO & modules#nrf24l01|nrf24l01]]
+	3. [[#GPIO & modules#Взлом светофоров|Взлом светофоров]]
+	4. [[#GPIO & modules#Модуль W5500|Модуль W5500]]
+	5. [[#GPIO & modules#nrf24l01|nrf24l01]]
+	6. [[#GPIO & modules#Official Wi-Fi Development Board.|Official Wi-Fi Development Board.]]
+		1. [[#Official Wi-Fi Development Board.#Where to buy?|Where to buy?]]
+		2. [[#Official Wi-Fi Development Board.#Official Purpose Of The Wi-Fi Development Board[¶](https://flipper.wiki/wifi-devboard/#official-purpose-of-the-wi-fi-development-board "Permanent link")|Official Purpose Of The Wi-Fi Development Board[¶](https://flipper.wiki/wifi-devboard/#official-purpose-of-the-wi-fi-development-board "Permanent link")]]
+		3. [[#Official Wi-Fi Development Board.#Community Uses For The Board[¶](https://flipper.wiki/wifi-devboard/#community-uses-for-the-board "Permanent link")|Community Uses For The Board[¶](https://flipper.wiki/wifi-devboard/#community-uses-for-the-board "Permanent link")]]
+		4. [[#Official Wi-Fi Development Board.#Useful Links[¶](https://flipper.wiki/wifi-devboard/#useful-links "Permanent link")|Useful Links[¶](https://flipper.wiki/wifi-devboard/#useful-links "Permanent link")]]
 9. [[#iButton|iButton]]
 	1. [[#iButton#Что такое iButton|Что такое iButton]]
 	2. [[#iButton#Режим эмуляции iButton|Режим эмуляции iButton]]
@@ -178,8 +182,9 @@ TODO:
 		11. [[#GPIO#esp8266_deauther v2|esp8266_deauther v2]]
 		12. [[#GPIO#IFTTT Virtual Button|IFTTT Virtual Button]]
 		13. [[#GPIO#ESP Flasher|ESP Flasher]]
-		14. [[#GPIO#[W5500] Ethernet|[W5500] Ethernet]]
+		14. [[#GPIO#\[W5500\] Ethernet|\[W5500\] Ethernet]]
 		15. [[#GPIO#Evil captive portal|Evil captive portal]]
+		16. [[#GPIO#Sentry Safe|Sentry Safe]]
 	4. [[#Apps#Key Copier|Key Copier]]
 13. [[#Flipper Mobile App|Flipper Mobile App]]
 	1. [[#Flipper Mobile App#Connecting to Flipper Zero|Connecting to Flipper Zero]]
@@ -1404,7 +1409,8 @@ Flipper Zero позволяет управлять различными устр
 ![[remotes_lib.webp]]
 
 
-
+## Ссылки
+- [Flipper-IRDB](https://github.com/Lucaslhm/Flipper-IRDB): Community driven database of Flipper Zero formatted infrared files that anyone can contribute to.
 
 # Bluetooth
 ## BLE Spam
@@ -1566,6 +1572,43 @@ Pin 1 запитан от встроенного аккумулятора или
 ![[nrf24l012.png]]
 
 
+## Official Wi-Fi Development Board.
+
+The developer board with Wi-Fi connectivity made specially for Flipper Zero. Based on the [ESP32-S2 module](https://www.espressif.com/en/products/socs/esp32-s2), this devboard allows:
+
+- Wireless Flipper Zero firmware update
+- Advanced in-circuit debugging via USB or Wi-Fi using the [Black Magic Probe](https://github.com/blacksphere/blackmagic) open source project
+
+As a bonus, ESP32-S2 allows Wi-Fi penetration testing (PMKID capturing, deauth, and more) and connects Flipper Zero to the Internet. These functions are not supplied with the module and must be implemented additionally.
+
+### Where to buy?
+
+- [https://shop.flipperzero.one/products/wifi-devboard](https://shop.flipperzero.one/products/wifi-devboard)
+
+### Official Purpose Of The Wi-Fi Development Board[¶](https://flipper.wiki/wifi-devboard/#official-purpose-of-the-wi-fi-development-board "Permanent link")
+
+The official Wi-Fi development board sold by Flipper Devices is geared primarily for debugging firmware and application for the Flipper Zero. Due to this, it arrives pre-flashed with the [BlackMagic](https://github.com/flipperdevices/blackmagic-esp32-s2) firmware to enable both wired and wireless debugging.
+
+Documentation for how to begin debugging with the board can be found in the [official flipper zero documentation](https://developer.flipper.net/flipperzero/doxygen/dev_board_get_started.html).
+
+### Community Uses For The Board[¶](https://flipper.wiki/wifi-devboard/#community-uses-for-the-board "Permanent link")
+
+If one does not desire to do development with the board or wants to try a different use for the board, it is possible to flash the Wi-Fi board with alternate firmware to try new functions.
+
+The following is a partial list of a few popular community firmware that one may use for the board that also have companion apps for the Flipper Zero:
+
+- [Marauder](https://github.com/justcallmekoko/ESP32Marauder/wiki/flipper-zero), an offensive security testing platform for ESP32 based devices, featuring both Wi-Fi tools and Bluetooth tools for hardware supporting bluetooth.
+- [FlipperHTTP](https://github.com/jblanked/FlipperHTTP), a multi-purpose firmware that uses HTTP requests to retrieve information from websites, download applications from the catalog, connect with users on social media platforms, and extract data from APIs.
+- [GhostESP](https://github.com/Spooks4576/Ghost_ESP), a firmware that provides tools to perform comprehensive Wi-Fi and Bluetooth Low Energy (BLE) analysis, execute targeted wireless tests, and explore dynamic wireless environments.
+
+### Useful Links[¶](https://flipper.wiki/wifi-devboard/#useful-links "Permanent link")
+
+- [FZEE flasher](https://fzeeflasher.com/), an easy web based ESP flasher for installing popular firmware with only a few clicks.
+- [EspWebTool](https://esp.huhn.me/), a more manual and general purpose web flasher tool for all ESP32 devices, requires having pre-built firmware binaries.
+- [Ghost ESP Flasher](https://flasher.spookytools.com/), Online flasher for flashing GhostESP to supported ESP32 devices.
+
+
+---
 
 # iButton
 
@@ -2270,3 +2313,5 @@ https://habr.com/ru/companies/ruvds/articles/768658/
 
 Устройство вполне можно собрать самому. Инструкции доступны здесь:
 https://github.com/EstebanFuentealba/Flipper-Zero-Video-Game-Module-DIY
+
+
