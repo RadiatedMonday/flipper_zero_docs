@@ -2399,6 +2399,12 @@ https://lab.flipper.net/apps/eth_troubleshooter
 
 https://github.com/bigbrodude6119/flipper-zero-evil-portal
 
+### \[ESP32\] Evil portal
+
+This project will turn your Wi-Fi dev board into an open access point. When users try to connect to this access point they will be served a fake login screen. User credentials are sent to the Flipper and logged on the SD card.
+
+https://github.com/bigbrodude6119/flipper-zero-evil-portal
+
 ### Sentry Safe
 
 Открытие электронного сейфа фирмы Sentry с помощью Flipper Zero с использованием уязвимости в протоколе управления контроллера (UART)
@@ -2409,6 +2415,19 @@ https://www.youtube.com/watch?v=trpOoM6ugnk
 
 ## Key Copier
 https://habr.com/ru/news/852682/
+![[key_cop.jpg]]
+
+Утилита работает с ключами Kwikset KW1, Schalge SC4 и их аналогами. Для копирования бородки надо выбрать модель ключа, приложить сам ключ к экрану Flipper Zero и отрегулировать положение выемок. Цифровой слепок можно использовать для изготовления дубликата в мастерской. Пользователь, показавший работу утилиты, отмечает, что последнее время часто использует её для создания копий ключей. Разработчики отмечают, что для более точной подгонки лучше закрыть один глаз.
+
+Сайт для генерации STL модели:
+https://keygen.co/
+
+Github, если сайт недоступен:
+https://github.com/ervanalb/keygen
+
+![[key_copy.mp4]]
+
+
 
 # Flipper Mobile App
 
