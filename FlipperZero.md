@@ -1770,6 +1770,13 @@ https://github.com/ooovenenoso/BadUSB-GPT
 https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/BadUSB-MarkCyber
 https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/Bombs
 https://github.com/nocomp/Flipper_Zero_Badusb_hack5_payloads
+https://github.com/grugnoymeme/flipperzero-badUSB
+https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/MacOS-narstybits
+https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/Zero-Lazagne
+https://github.com/atomiczsec/My-Payloads
+https://github.com/emptythevoid/flipperzero/tree/main/badusb
+https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/s4dic%20-%20BadUSB/passwordgrabber
+
 
 
 
