@@ -1623,6 +1623,16 @@ The following is a partial list of a few popular community firmware that one may
 
 Если внимательно посмотреть на модуль и плату-переходник, которая идёт в составе, (ведь реверс-инжиниринг никто нам не запрещал), то по рассыпухе можно увидеть, что важная часть модуля – это понижайка до напряжения 3,3В. В мануале к микросхеме E07-M1101D-SMA указано, что работает она именно от этого напряжения, а также, что преобразователь – линейный, что благотворно сказывается на уровне шумов при приёме.
 
+При сравнении показателей мощности встроенного и внешнего радиомодуля видим хороший прирост:
+
+|   |   |   |   |   |
+|---|---|---|---|---|
+|**AMP**|**TR(dBV)**|**POW(mW)**|**Dist aprox (m)**|**Dist cub_root aprox (m)**|
+|Flipper Zero internal module & antenna|-49|0,05188358724|4,58397784|9,815200545|
+|**E07-M1101D-SMA**|**-29,5**|**4,62412958**|**43,27554136**|**43,84289037**|
+
+При условии, что микруха тут тот же, что и внутри флиппера, то влияет на такое увеличение правильно отстроенная антенна и согласованный тракт именно под ±433 MHz.
+
 
 
 ### Buy a ready-made module
@@ -1631,14 +1641,18 @@ The following is a partial list of a few popular community firmware that one may
 - [Rabbit-Labs™ - Flux Capacitor - Amplified CC1101](https://www.tindie.com/products/tehrabbitt/rabbit-labs-flux-capacitor-amplified-cc1101/) is a 5v powered, External CC1101 Module based on the E07-433M20S Chipset, offering up to 100mW of power. Receive and send signals between 425-450MHz
 - [CC1101 shielded module for 433Mhz by ruckus // section80 in Australia](https://www.tindie.com/products/ruckus/cc1101-shielded-module/)
 
-### Do-it-yourself
+### Сделать самому
 
-You can build this module yourself, if you have a soldering iron, a solder, and the CC1101 module itself.
+Вы можете сами собрать этот модуль, как и любой другой, если у вас есть паяльник, рассыпуха, и, собственно, сам CC1101 модуль. Итак, вам понадобится:
 
-- External CC1101 with external SMA antenna. Everyone mostly uses this module, based on [Ebyte 10dBm 530m CC1101 Rf 433MHz Fsk](https://www.cdebyte.com/products/E07-M1101D-SMA/2).
-- Cables, breadboard as a AMS1117-3.3, solder.
+- Внешний CC1101 с внешней SMA антенной. Все в основном пользуются таким вот модулем, на базе [Ebyte 10dBm 530m CC1101 Rf 433MHz Fsk](https://www.ru-ebyte.com/products/E07-M1101D-SMA)
+    
+- Рассыпуха в виде AMS1117-3.3
+    
+- Макетная плата и некоторое количество соединительного  провода, например можно использовать МГТФ.
+    
 
-To build a working module, follow the pinout as shown in the image below
+Чтобы собрать модуль на базе Ebyte-CC1101, руководствуйтесь распиновкой с  изображения
 
 ![[Ebyte-CC1101-impr.png]]
 
