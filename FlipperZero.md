@@ -1779,6 +1779,83 @@ The following is a partial list of a few popular community firmware that one may
     
 - А хорошая направленная антенна ещё лучше, и при передаче, и при приёме*
 
+## External Radio Module for 900 MHz
+
+- [Rabbit-Labs™ CC1101 900Mhz Module](https://www.tindie.com/products/tehrabbitt/rabbit-labs-cc1101-900mhz-module/)
+- [CC1101 shielded module for 900Mhz by ruckus // section80 in Australia](https://www.tindie.com/products/ruckus/cc1101-shielded-module/)
+
+### What is the purpose of this board?
+
+This is a custom-made 900 Mhz module designed around a similar form factor to the existing CC1101 modules available on amazon and aliexpress.
+
+### But... WHY?
+
+The only CC1101 readily available is the 433Mhz CC1101 module. While this module is able to operate on higher frequencies > 600Mhz, it does not perform as well at these frequencies in comparison to the 433Mhz it was designed for. Because of this, I built this module to be used at higher frequencies such as 868-900Mhz as it uses a radio tuned to handle this upper-frequency range while also being compatible with 315/433Mhz (just not as strong as 900Mhz)
+
+### What makes it special?
+
+This is the only high-frequency module fully pin-compatible with the MAYHEM Board and other CC1101 MiniBoards, Multiboards, and full-height boards on the market. The module is plug-and-play with your existing boards and follows the same pinout as the EByte 433Mhz CC1101 module that has become the go-to in the community. This board also has decoupling capacitors as close to the radio itself and RF Shielding around the actual RF circuitry to limit noise.
+
+### PINOUT
+
+- `GND` - Flipper Pin 11
+- `3v3` - Flipper Pin 9
+- `GD0` - Flipper Pin 6
+- `CS` - Flipper Pin 4
+- `SCK` - Flipper Pin 5
+- `MOSI` - Flipper Pin 2
+- `MISO` - Flipper Pin 3
+- `UNUSED` - N/A
+
+## GPS Module
+
+- [TinyGPS](https://www.tindie.com/products/sce/flipper-zero-tinygps/)
+
+Equipped with a high-precision Telit GPS module, the Tiny GPS board offers accurate location data for your applications. Its compact design makes it ideal for embedded systems and projects where space is limited.
+
+If you already own a Flux Capacitor from Rabbit Labs USA, then this board is the perfect choice for you! It conveniently fits alongside the Flipper Zero, creating a fantastic combo for your Flipper Zero.
+
+To unlock the full potential of this board, make sure to use the [Xtreme firmware](https://awesome-flipper.com/firmware/xtreme/), which has been specifically optimized to leverage its unique capabilities. With this firmware, you can harness the complete capabilities of the Tiny GPS board, enabling precise GPS positioning and Subdriving.
+
+**Subdriving** is a novel feature within the [Xtreme Firmware](https://awesome-flipper.com/firmware/xtreme/), which functions similarly to wardriving, but it's tailored for Sub-GHz signals. This innovative feature allows you to explore and interact with Sub-GHz wireless signals, opening up a world of possibilities!
+
+Once you've successfully installed the firmware, navigate to the Xtreme app. Open the Protocols section, scroll down to GPIO pins, and set the UART NMEA Channel to 15,16. This configuration is important otherwise it will not work!
+
+The default baudrate is 9600! Time To First Fix (TTFF) takes about 30 seconds, keep your Flipper next to an open window or outside.
+
+To use the Tiny GPS board on other firmware, please use [this GPS NMEA app](https://github.com/Sil333033/flipperzero-gps-lpuart)
+
+## Flipper Zero Magspoof Module
+
+- [Flipper Zero Magspoof Module by Astrowave Electronics in United States of America](https://www.tindie.com/products/astrowave/flipper-zero-magspoof-module/)
+- [Flipper Zero Add-On: MagSpoof](https://electroniccats.com/store/flipper-add-on-magspoof/)
+
+PLEASE NOTE: THIS DEVICE DOES NOT READ MAGSTRIPES, IT ONLY EMULATES THEM
+
+![[magspoof.jpg]]
+
+
+### ... What? What the heck is a magspoof?
+
+Well... you know when you swipe your card at the store? That's a magnetic stripe card, aka magstripe. The black stripe (usually.. sometimes it's another color) on the back of the card has some magnetically encoded information- when you swipe your card, the reader picks up this information. There's probably some more detailed information on what my board here is doing[1](https://awesome-flipper.com/extra/module/magspoof/#fn:samy-magspoof), but it basically transmits that data to the reader.
+
+### Cool... but why?
+
+I dunno, just think it's pretty neat. I originally made a standalone board which you can also get here, but figured I'd design a Flipper module too as practice.
+
+### Alright, what's on the board?
+
+Probably the most noticeable part of the board is the giant PCB coil, used to transmit the magnetic card information. It's driven by a L293D dual H-bridge motor driver- though I'm only using one H-bridge... and it's not even driving a motor. There's a couple of LEDs too- one to show when Flipper's 5V is available, and another to show when the board is transmitting. Lastly, there's a switch in the center to allow for the module to be switched between 3.3 and 5 volts. It draws about 35 mA when on 3.3V, and about 90 mA on 5V.
+
+Again, keep in mind that this board has no reading functionality - this board only emulates magstripe cards. 
+
+### App for this?
+
+- [https://github.com/zacharyweiss/magspoof_flipper](https://github.com/zacharyweiss/magspoof_flipper)
+
+## RS232
+
+
 
 ## ИК-модуль TV Buster 6.3 Вт
 
@@ -1797,9 +1874,7 @@ The following is a partial list of a few popular community firmware that one may
 Модуль от https://flipper.market/product-asdbwur
 
 Описание:
-Поддерживается всеми прошивками Flipper Zero Внешняя антенна на 2.4 ГГц 3dBi значительно увеличивает радиус работы устройства. Также вы можете подключить другие антенны с разъёмом RP-SMA Вы можете сохранять хейндшейки и другие пакеты на внешнюю флешку или карту памяти внутри Flipper Zero. На плате имеется светодиодный индикатор, который показывает работу устройства Всё готово для быстрого старта - в комплекте имеется MicroSD-карта, USB-картридер, а само устройство уже прошито. Просто установите приложение ESP32 Marauder из магазина приложений Flipper Zero, подключите плату к флипперу и начните пользоваться Если вам потребуется обновить прошивку, в больше не нужно хитрым образом нажимать кнопки. Вы можете прошиться через MicroSD-карту или прямо флиппером с помощью приложения ESP32 Flasher (должен быть установлен вместе с прошивкой Unleashed или Momentum) Quick Flash- > ESP32 WROOM -> Marauder
-
-
+Поддерживается всеми прошивками Flipper Zero Внешняя антенна на 2.4 ГГц 3dBi значительно увеличивает радиус работы устройства. Также вы можете подключить другие антенны с разъёмом RP-SMA Вы можете сохранять хейндшейки и другие пакеты на внешнюю флешку или карту памяти внутри Flipper Zero. На плате имеется светодиодный индикатор, который показывает работу устройства Всё готово для быстрого старта - в комплекте имеется MicroSD-карта, USB-картридер, а само устройство уже прошито. Просто установите приложение [[#[ESP32 ] WiFi Marauder]] из магазина приложений Flipper Zero, подключите плату к флипперу и начните пользоваться Если вам потребуется обновить прошивку, в больше не нужно хитрым образом нажимать кнопки. Вы можете прошиться через MicroSD-карту или прямо флиппером с помощью приложения [[#ESP Flasher]] (должен быть установлен вместе с прошивкой Unleashed или Momentum) Quick Flash- > ESP32 WROOM -> Marauder
 
 
 ---
