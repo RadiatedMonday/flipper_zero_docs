@@ -1567,7 +1567,18 @@ Pin 1 запитан от встроенного аккумулятора или
 
 
 
-## nrf24l01
+##  Радиомодуль 2.4 ГГц NRF24L01 Mouse Hunter
+
+NRF24L01 используется для исследования беспроводных устройств, таких как беспроводные мыши и клавиатуры. Совместим с приложениями "NRF24 Sniffer", "NRF24 Mouse Jacker", "NRF24 Channel scaner" и другими приложениями Flipper Zero, использующие чип NRF24L01 
+
+
+### Купить
+
+Данное исполнение содержит усилитель принимаемого и отправляемого сигнала. Максимальная мощность - 500 мВт - самая большая на рынке РФ. На плате уже распаяны стабилизатор и фильтр питания. Это обеспечивает стабильную работу капризного чипа в любых условиях
+https://flipper.market/product-gkkzlxf
+
+### Сделай сам (pinout)
+
 ![[nrf24l01.png]]
 
 ![[nrf24l012.png]]
@@ -1776,9 +1787,22 @@ The following is a partial list of a few popular community firmware that one may
 
 Увеличивает дальность отправки ИК-сигнала до 90 метров. Больше не нужно целиться точно в приёмник — излучатели направлены в 4 стороны для уверенного управления бытовой техникой и другими устройствами с ИК-приёмником. Суммарная мощность свечения — 6.3 Вт (против 0.3 Вт у встроенного модуля Flipper Zero). Имеется индикация передачи сигнала. Автоматически определяется Flipper Zero (для работы включите автоопределение в меню: Infrared → GPIO Settings → Signal Output → Detect).
 
+
+## ESP32 aka Marauder
+
+Предназначен для исследование сетей WiFi 2.4 ГГц с помощью Flipper Zero. Он может использоваться для сканирования ближайших Wi-Fi сетей, анализа их параметров, мониторинга сетевой активности, поиска уязвимостей в беспроводных сетях и многих других задач.
+
+### Купить
+
+Модуль от https://flipper.market/product-asdbwur
+
+Описание:
+Поддерживается всеми прошивками Flipper Zero Внешняя антенна на 2.4 ГГц 3dBi значительно увеличивает радиус работы устройства. Также вы можете подключить другие антенны с разъёмом RP-SMA Вы можете сохранять хейндшейки и другие пакеты на внешнюю флешку или карту памяти внутри Flipper Zero. На плате имеется светодиодный индикатор, который показывает работу устройства Всё готово для быстрого старта - в комплекте имеется MicroSD-карта, USB-картридер, а само устройство уже прошито. Просто установите приложение ESP32 Marauder из магазина приложений Flipper Zero, подключите плату к флипперу и начните пользоваться Если вам потребуется обновить прошивку, в больше не нужно хитрым образом нажимать кнопки. Вы можете прошиться через MicroSD-карту или прямо флиппером с помощью приложения ESP32 Flasher (должен быть установлен вместе с прошивкой Unleashed или Momentum) Quick Flash- > ESP32 WROOM -> Marauder
+
+
+
+
 ---
-
-
 
 # iButton
 
@@ -2173,11 +2197,10 @@ SWD, JTAG , CMSIS-DAP v1 (18 KiB/s), CMSIS-DAP v2 (46 KiB/s), VCP (USB-UART).
 
 WinUSB for driverless installation for Windows 8 and above.
 
-### [ESP32] WiFi Marauder
+### \[ESP32\] WiFi Marauder
 *Практически все работы с Wifi лучше проводить на полноценном ноутбуке или на телефоне с KaliNethunter*
-Companion app for interfacing with ESP32 WiFi Marauder
 
-Requires a connected dev board running Marauder FW. See install instructions from UberGuidoZ here: [https://github.com/UberGuidoZ/Flipper/tree/main/Wifi_DevBoard#marauder-install-information](https://github.com/UberGuidoZ/Flipper/tree/main/Wifi_DevBoard#marauder-install-information)
+Приложуха для работы с [[#ESP32 aka Marauder]]
 
 ### ESP8266 Deauther
 *Практически все работы с Wifi лучше проводить на полноценном ноутбуке или на телефоне с KaliNethunter*
