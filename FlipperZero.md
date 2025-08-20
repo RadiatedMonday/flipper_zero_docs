@@ -2430,10 +2430,8 @@ Thanks to the FlipTDI app, Flipper Zero can emulate USB adapters based on the FT
 
 To use your Flipper as a USB-to-GPIO/SPI/UART adapter:
 
-1. Install the Flip TDI app from the Flipper Apps Catalog and launch it
-    
-2. Connect your Flipper to your PC via USB. The FlipTDI device will be detected
-    
+1. Install the Flip TDI app from the Flipper Apps Catalog and launch it    
+2. Connect your Flipper to your PC via USB. The FlipTDI device will be detected    
 3. Follow the instructions for the PC software you want to use with the adapter
 
 
