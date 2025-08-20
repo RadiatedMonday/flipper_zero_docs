@@ -131,12 +131,46 @@ TODO:
 	2. [[#GPIO & modules#GPIO menu|GPIO menu]]
 	3. [[#GPIO & modules#Взлом светофоров|Взлом светофоров]]
 	4. [[#GPIO & modules#Модуль W5500|Модуль W5500]]
-	5. [[#GPIO & modules#nrf24l01|nrf24l01]]
+	5. [[#GPIO & modules#Радиомодуль 2.4 ГГц NRF24L01 Mouse Hunter|Радиомодуль 2.4 ГГц NRF24L01 Mouse Hunter]]
+		1. [[#Радиомодуль 2.4 ГГц NRF24L01 Mouse Hunter#Купить|Купить]]
+		2. [[#Радиомодуль 2.4 ГГц NRF24L01 Mouse Hunter#Сделай сам (pinout)|Сделай сам (pinout)]]
 	6. [[#GPIO & modules#Official Wi-Fi Development Board.|Official Wi-Fi Development Board.]]
 		1. [[#Official Wi-Fi Development Board.#Where to buy?|Where to buy?]]
-		2. [[#Official Wi-Fi Development Board.#Official Purpose Of The Wi-Fi Development Board[¶](https://flipper.wiki/wifi-devboard/#official-purpose-of-the-wi-fi-development-board "Permanent link")|Official Purpose Of The Wi-Fi Development Board[¶](https://flipper.wiki/wifi-devboard/#official-purpose-of-the-wi-fi-development-board "Permanent link")]]
-		3. [[#Official Wi-Fi Development Board.#Community Uses For The Board[¶](https://flipper.wiki/wifi-devboard/#community-uses-for-the-board "Permanent link")|Community Uses For The Board[¶](https://flipper.wiki/wifi-devboard/#community-uses-for-the-board "Permanent link")]]
-		4. [[#Official Wi-Fi Development Board.#Useful Links[¶](https://flipper.wiki/wifi-devboard/#useful-links "Permanent link")|Useful Links[¶](https://flipper.wiki/wifi-devboard/#useful-links "Permanent link")]]
+		2. [[#Official Wi-Fi Development Board.#Official Purpose Of The Wi-Fi Development Board|Official Purpose Of The Wi-Fi Development Board]]
+		3. [[#Official Wi-Fi Development Board.#Community Uses For The Board|Community Uses For The Board]]
+		4. [[#Official Wi-Fi Development Board.#Useful Links|Useful Links]]
+	7. [[#GPIO & modules#External Radio Module for 433 MHz aka CC1101|External Radio Module for 433 MHz aka CC1101]]
+		1. [[#External Radio Module for 433 MHz aka CC1101#CC1101 с внешней антенной, а на самом деле E07-M1101D-SMA|CC1101 с внешней антенной, а на самом деле E07-M1101D-SMA]]
+		2. [[#External Radio Module for 433 MHz aka CC1101#Купить готовый|Купить готовый]]
+		3. [[#External Radio Module for 433 MHz aka CC1101#Сделать самому|Сделать самому]]
+		4. [[#External Radio Module for 433 MHz aka CC1101#Еще вариант на базе СС1101 в исполнении с E07-400MM10S|Еще вариант на базе СС1101 в исполнении с E07-400MM10S]]
+		5. [[#External Radio Module for 433 MHz aka CC1101#А можно еще дальше? Или сказ про усиление на базе E07-433M20S|А можно еще дальше? Или сказ про усиление на базе E07-433M20S]]
+		6. [[#External Radio Module for 433 MHz aka CC1101#“Only a Sith deals in absolutes” или “Надо больше усиления”|“Only a Sith deals in absolutes” или “Надо больше усиления”]]
+		7. [[#External Radio Module for 433 MHz aka CC1101#А что с приемом сигналов?|А что с приемом сигналов?]]
+	8. [[#GPIO & modules#External Radio Module for 900 MHz|External Radio Module for 900 MHz]]
+		1. [[#External Radio Module for 900 MHz#What is the purpose of this board?|What is the purpose of this board?]]
+		2. [[#External Radio Module for 900 MHz#But... WHY?|But... WHY?]]
+		3. [[#External Radio Module for 900 MHz#What makes it special?|What makes it special?]]
+		4. [[#External Radio Module for 900 MHz#PINOUT|PINOUT]]
+	9. [[#GPIO & modules#GPS Module|GPS Module]]
+	10. [[#GPIO & modules#Flipper Zero Magspoof Module|Flipper Zero Magspoof Module]]
+		1. [[#Flipper Zero Magspoof Module#... What? What the heck is a magspoof?|... What? What the heck is a magspoof?]]
+		2. [[#Flipper Zero Magspoof Module#Cool... but why?|Cool... but why?]]
+		3. [[#Flipper Zero Magspoof Module#Alright, what's on the board?|Alright, what's on the board?]]
+		4. [[#Flipper Zero Magspoof Module#App for this?|App for this?]]
+	11. [[#GPIO & modules#RS232|RS232]]
+		1. [[#RS232#What is it?|What is it?]]
+		2. [[#RS232#What does it do?|What does it do?]]
+		3. [[#RS232#What makes it special?|What makes it special?]]
+		4. [[#RS232#How to use it:|How to use it:]]
+		5. [[#RS232#Why Serial? Isn't it Old?|Why Serial? Isn't it Old?]]
+		6. [[#RS232#This seems pretty neat, What are the possibilities?|This seems pretty neat, What are the possibilities?]]
+		7. [[#RS232#Why did I make it?|Why did I make it?]]
+	12. [[#GPIO & modules#CANBus для Flipper Zero - Модуль подключения к CAN шине|CANBus для Flipper Zero - Модуль подключения к CAN шине]]
+		1. [[#CANBus для Flipper Zero - Модуль подключения к CAN шине#Купить|Купить]]
+	13. [[#GPIO & modules#ИК-модуль TV Buster 6.3 Вт|ИК-модуль TV Buster 6.3 Вт]]
+	14. [[#GPIO & modules#ESP32 aka Marauder|ESP32 aka Marauder]]
+		1. [[#ESP32 aka Marauder#Купить|Купить]]
 9. [[#iButton|iButton]]
 	1. [[#iButton#Что такое iButton|Что такое iButton]]
 	2. [[#iButton#Режим эмуляции iButton|Режим эмуляции iButton]]
@@ -177,7 +211,7 @@ TODO:
 		6. [[#GPIO#Coffee-EEPROM-FAP|Coffee-EEPROM-FAP]]
 		7. [[#GPIO#RC2014 ColecoVision|RC2014 ColecoVision]]
 		8. [[#GPIO#DAP Link|DAP Link]]
-		9. [[#GPIO#[ESP32] WiFi Marauder|[ESP32] WiFi Marauder]]
+		9. [[#GPIO#\[ESP32\] WiFi Marauder|\[ESP32\] WiFi Marauder]]
 		10. [[#GPIO#ESP8266 Deauther|ESP8266 Deauther]]
 		11. [[#GPIO#esp8266_deauther v2|esp8266_deauther v2]]
 		12. [[#GPIO#IFTTT Virtual Button|IFTTT Virtual Button]]
@@ -210,7 +244,6 @@ TODO:
 	3. [[#Video Game Module#Осциллограф Scoopy|Осциллограф Scoopy]]
 	4. [[#Video Game Module#Прошивка и схемы|Прошивка и схемы]]
 	5. [[#Video Game Module#Самостоятельная сборка|Самостоятельная сборка]]
-
 
 
 # Основы
@@ -1855,6 +1888,52 @@ Again, keep in mind that this board has no reading functionality - this board on
 
 ## RS232
 
+![[rs232.png]]
+
+- [Flipper Zero - Flip'n Cereal RS232 by Rabbit-Labs™](https://www.tindie.com/products/tehrabbitt/flipper-zero-flipn-cereal-rs232-by-rabbit-labs/)
+
+### What is it?
+
+The first ever Plug-and-Play RS232 Adapter Designed for use with the Flipper Zero. No special Configuration Needed, No having to turn on 5v, or special firmware... Yes, this will work with Official Firmware out of the box :)
+
+### What does it do?
+
+It handles the conversion of the TTL Communication that your flipper knows what to do with, to a standard RS232 compatible serial interface.
+
+### What makes it special?
+
+First off, it's smol, compact, and sits flush on top of the flipper's 10-pin GPIO header. This is important because it truly is, plug-and-play. All you need to do is make sure your baud rate to the device you're connecting to is correct, and you can interface your flipper with any RS232 interface. (I tested mine on my Ubiquiti EdgeRouter 4 using a Cat5 Cable to the console port).
+
+### How to use it:
+
+1. Place board onto flipper, connect Cat5 cable (RJ45) to either a console port using the proper pinout (Cisco requires a special "roll-over" cable) or to an RS232 to RJ45 adapter (commonly found on Ebay, or Amazon).
+2. Open the serial APP of your choice :) In my testing, I used the UART to USB Pass-thru and was able to turn my flipper into a simple USB to RS232 adapter, for changing parameters on my router.
+
+### Why Serial? Isn't it Old?
+
+What's old is new, and is still in use by hundreds of thousands of devices worldwide due to it's reliability and simple standard. Everything from modems, to receipt printers, to barcode scanners, there are RS232 version of all of these things. Even my new Vinyl Cutter (Used to make the Rabbit-Labs Decals and other swag) and Laser use RS232 to interface with my PC!
+
+### This seems pretty neat, What are the possibilities?
+
+Write a FAP to offer Flipper-Dial-Up service, or maybe a wardialing FAP? Maybe Bad-USB, but for Serial interfaces? What about using the Flipper as a standalone controller for a laser, or a Plotter / Cutter without the need for a full-fledged PC? Maybe someone can make a FAP to use a Thermal printer to print photos taken on your Mayhem Camera! There is quite a bit of possibility :)
+
+### Why did I make it?
+
+Because Serial is cool. My first job out of college, I was working with old RS232/485 Time clocks, and had to deal with a LOT of serial stuff. I wish I had this back then, it would have made things a lot more interesting (like being able to maybe write a FAP or something to back up the contents of a timeclock to an SD card, rather than having to lug a laptop around).
+
+Anyway, I've always loved serial interfaces, Maybe it's because I'm part of the generation that has the modem sounds living rent-free in the back of my brain... or maybe it's because of Cereal-Killer from the movie Hackers in 1995... or maybe it's because I'm a Rabbit and Bits are for Skids. Whatever the reason... Serial is COOL
+
+## CANBus для Flipper Zero - Модуль подключения к CAN шине
+
+![[canbus.jpg]]
+
+Модуль для взаимодействия с шиной CAN. Возможность чтения данных через OBD2. Вы также можете напрямую читать, перехватывать пакеты, редактировать, передавать обратно в сеть. Модуль будет отличным инструментом для анализа, обнаружения ошибок и управления периферийными устройствами в сети CAN Bus.
+
+Для включения модуля необходимо подать питание 5V через меню “GPIO / 5V on GPIO =ON”  
+Ссылка на проект и сборку приложения под свою прошивку [https://github.com/ElectronicCats/flipper-MCP2515-CANBUS](https://github.com/ElectronicCats/flipper-MCP2515-CANBUS)
+
+### Купить 
+https://flipperaddons.com/product/canbus-flipper-zero/
 
 
 ## ИК-модуль TV Buster 6.3 Вт
