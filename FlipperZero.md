@@ -1765,6 +1765,12 @@ https://github.com/UNC0V3R3D/Flipper_Zero-BadUsb
 https://github.com/aleff-github/my-flipper-shits/
 https://github.com/I-Am-Jakoby/Flipper-Zero-BadUSB
 https://github.com/FalsePhilosopher/badusb
+https://github.com/FalsePhilosopher/BadUSB-Playground/
+https://github.com/ooovenenoso/BadUSB-GPT
+https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/BadUSB-MarkCyber
+https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/Bombs
+https://github.com/nocomp/Flipper_Zero_Badusb_hack5_payloads
+
 
 
 Flipper Zero может выступать в качестве устройства BadUSB, распознаваемого компьютерами как устройство интерфейса пользователя (HID), такое как клавиатура или даже мышь. Устройство BadUSB может изменять системные настройки, открывать бэкдоры, извлекать данные, запускать обратные оболочки или делать практически все, что может быть достигнуто с помощью физического доступа. Это делается путем выполнения набора команд, написанных на скриптовом языке Rubber Ducky, также известном как DuckyScript. Этот набор команд также называется полезной нагрузкой.
