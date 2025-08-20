@@ -218,8 +218,12 @@ TODO:
 		13. [[#GPIO#ESP Flasher|ESP Flasher]]
 		14. [[#GPIO#\[W5500\] Ethernet|\[W5500\] Ethernet]]
 		15. [[#GPIO#Evil captive portal|Evil captive portal]]
-		16. [[#GPIO#Sentry Safe|Sentry Safe]]
-	4. [[#Apps#Key Copier|Key Copier]]
+		16. [[#GPIO#\[ESP32\] Evil portal|\[ESP32\] Evil portal]]
+		17. [[#GPIO#Flashlight|Flashlight]]
+		18. [[#GPIO#FlipTDI|FlipTDI]]
+		19. [[#GPIO#Sentry Safe|Sentry Safe]]
+	4. [[#Apps#Tools|Tools]]
+		1. [[#Tools#Key Copier|Key Copier]]
 13. [[#Flipper Mobile App|Flipper Mobile App]]
 	1. [[#Flipper Mobile App#Connecting to Flipper Zero|Connecting to Flipper Zero]]
 		1. [[#Connecting to Flipper Zero#If your Flipper Zero is not detected|If your Flipper Zero is not detected]]
@@ -244,6 +248,7 @@ TODO:
 	3. [[#Video Game Module#Осциллограф Scoopy|Осциллограф Scoopy]]
 	4. [[#Video Game Module#Прошивка и схемы|Прошивка и схемы]]
 	5. [[#Video Game Module#Самостоятельная сборка|Самостоятельная сборка]]
+
 
 
 # Основы
@@ -2411,13 +2416,26 @@ https://github.com/bigbrodude6119/flipper-zero-evil-portal
 
 ### FlipTDI
 
-![[fliptdi.png]]
-
-Flipper FTDI232H emulator.
+https://lab.flipper.net/apps/flip_tdi
 
 This is a FT232H device emulation application
 
 Сonnect Flipper to your computer and open the application, a new FT232H compatible device will appear in the system
+
+![[flipper-zero-as-a-usb-to-gpio-spi-uart-adapter-for-your-pc-v0-be0l5n7lejtd1.webp]]
+
+Modern PCs and laptops don't have GPIO connectors and don't support interfaces popular in embedded systems. Luckily, USB adapters offer a solution. For example, those based on the FTDI FT232H chip enable connection to GPIO, SPI, I2C, UART, and JTAG. There is a lot of software available for USB adapters, including bus scanners, memory chip programmers, and plugins for Smart Home. You can also find python libs (e.g. pyftdi, pylibftdi) and hundreds of code examples on github.
+
+Thanks to the FlipTDI app, Flipper Zero can emulate USB adapters based on the FTDI chip. This means you can use software and tools designed for these adapters. Currently, FlipTDI supports UART, SPI, and GPIO.
+
+To use your Flipper as a USB-to-GPIO/SPI/UART adapter:
+
+1. Install the Flip TDI app from the Flipper Apps Catalog and launch it
+    
+2. Connect your Flipper to your PC via USB. The FlipTDI device will be detected
+    
+3. Follow the instructions for the PC software you want to use with the adapter
+
 
 
 ### Sentry Safe
