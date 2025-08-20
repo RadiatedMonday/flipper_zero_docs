@@ -2405,6 +2405,21 @@ This project will turn your Wi-Fi dev board into an open access point. When user
 
 https://github.com/bigbrodude6119/flipper-zero-evil-portal
 
+### Flashlight
+
+Подключаем светодиод, получаем фонарик
+
+### FlipTDI
+
+![[fliptdi.png]]
+
+Flipper FTDI232H emulator.
+
+This is a FT232H device emulation application
+
+Сonnect Flipper to your computer and open the application, a new FT232H compatible device will appear in the system
+
+
 ### Sentry Safe
 
 Открытие электронного сейфа фирмы Sentry с помощью Flipper Zero с использованием уязвимости в протоколе управления контроллера (UART)
@@ -2412,9 +2427,10 @@ https://github.com/bigbrodude6119/flipper-zero-evil-portal
 Подробности в видео:
 https://www.youtube.com/watch?v=trpOoM6ugnk
 
+## Tools
 
-## Key Copier
-https://habr.com/ru/news/852682/
+### Key Copier
+
 ![[key_cop.jpg]]
 
 Утилита работает с ключами Kwikset KW1, Schalge SC4 и их аналогами. Для копирования бородки надо выбрать модель ключа, приложить сам ключ к экрану Flipper Zero и отрегулировать положение выемок. Цифровой слепок можно использовать для изготовления дубликата в мастерской. Пользователь, показавший работу утилиты, отмечает, что последнее время часто использует её для создания копий ключей. Разработчики отмечают, что для более точной подгонки лучше закрыть один глаз.
@@ -2428,6 +2444,9 @@ https://github.com/ervanalb/keygen
 ![[key_copy.mp4]]
 
 
+
+
+---
 
 # Flipper Mobile App
 
