@@ -2527,12 +2527,32 @@ WiFi: Scan networks, beacon spam, deauth attacks, packet capture, evil portal, n
 https://lab.flipper.net/apps/gpio_7segment_output
 Control a 7-segment display with GPIO pins
 
+
+### GPIO Controller
+
+A visual tool to control the general purpose pins of the Flipper Zero
+
+https://github.com/Lokno/gpio_controller
+
+
+### GPIO Reader 2
+
+This is a fork of the `gpio` app built into the flipper, with added functionality to read GPIO inputs
+
+https://github.com/biotinker/flipperzero-gpioreader
+
+
+
 ### Sentry Safe
 
 Открытие электронного сейфа фирмы Sentry с помощью Flipper Zero с использованием уязвимости в протоколе управления контроллера (UART)
 
 Подробности в видео:
 https://www.youtube.com/watch?v=trpOoM6ugnk
+
+
+### Timelapse
+Simple intervalometer app, works via GPIO pins
 
 
 
