@@ -2514,7 +2514,18 @@ https://github.com/anfractuosity/flipperscope
 
 TEA5767 - супер компактный радио приёмник частотно модулированного сигнала. Позволяет принимать радиостанции в FM диапазоне
 
+### \[ESP32\] Ghost ESP
 
+https://lab.flipper.net/apps/ghost_esp
+
+Companion app for [Ghost ESP Firmware.](https://ghostesp.net/)
+
+WiFi: Scan networks, beacon spam, deauth attacks, packet capture, evil portal, network connection, and printer control. Bluetooth: Flipper discovery, Pineapple Detection, AirTag scanning, and packet capture. GPS: Wardriving capabilities.
+
+### 7-Segment Output
+
+https://lab.flipper.net/apps/gpio_7segment_output
+Control a 7-segment display with GPIO pins
 
 ### Sentry Safe
 
