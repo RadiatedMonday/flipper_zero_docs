@@ -2554,7 +2554,27 @@ https://www.youtube.com/watch?v=trpOoM6ugnk
 ### Timelapse
 Simple intervalometer app, works via GPIO pins
 
+  
+### \[NMEA\] GPS
+A simple Flipper Zero application for NMEA 0183 serial GPS modules, such as the
 
+- Adafruit Ultimate GPS Breakout.
+
+Heavy lifting (NMEA parsing) provided by minmea.
+Works with GPS modules via UART, using NMEA protocol.
+
+https://lab.flipper.net/apps/gps_nmea
+
+###  \[HC-SR\] Dist. sensor
+
+- Author is Ported and modified by [@xMasterX](https://github.com/xMasterX "GitHub User: xMasterX")
+- Comment: (original by Sanqui [https://github.com/Sanqui/flipperzero-firmware/tree/hc_sr04](https://github.com/Sanqui/flipperzero-firmware/tree/hc_sr04) - How to connect -> (5V -> VCC / (GND -> GND / (13TX -> Trig / (14RX -> Echo
+
+### i2c Tools
+
+
+
+https://lab.flipper.net/apps/i2ctools
 
 ## Tools
 
