@@ -2572,9 +2572,59 @@ https://lab.flipper.net/apps/gps_nmea
 
 ### i2c Tools
 
-
+Set of i2c tools
 
 https://lab.flipper.net/apps/i2ctools
+
+### INA Meter
+
+Application for reading TI INAxxx sensors.
+
+Когда вы создаете проект промышленной установки, робота, дистанционно управляемой модели ровера или аналогичный проект с микрокомпьютером, встает задача контроля состояния систем электропитания. Вам нужно проверять напряжение на аккумуляторах, потребляемый ток и мощность. Не исключено, что в проекте есть не одна, а несколько цепей, где нужно обеспечить подобный контроль.
+
+Результаты контроля можно передавать, например, на пульт управления или использовать как‑то еще. Когда заряд аккумуляторов подходит к концу, можно отключить какие‑нибудь устройства с целью экономии энергии или инициировать зарядку аккумуляторов вашего устройства. Если в устройстве есть сервоприводы, можно контролировать потребляемую ими мощность, а при перегрузке отключать все сервоприводы или некоторые из них.
+
+Этим и занимаются модули с чипами INA
+
+INA Meter is an application for Flipper Zero that allows you to read I2C-connected current/power monitors from Texas Instruments.
+
+#### Supported Sensors:
+
+- **INA219** – 0–26V, 16-bit resolution (±0.5% accuracy)
+- **INA226** – 0–36V, 16-bit resolution (±0.1% accuracy)
+- **INA228** – 0–85V, 20-bit resolution (±0.05% accuracy)
+
+#### Wiring
+
+| Flipper pin | INAxxx |
+| ----------- | ------ |
+| C0 (16)     | SCL    |
+| C1 (15)     | SDA    |
+|             |        |
+
+https://lab.flipper.net/apps/ina_meter
+
+### Lightmeter
+
+#### Lightmeter app for photography
+
+An application that suggests settings for your manual camera based on the reading of the ambient light sensor. Can also be used in a pure lux meter mode.
+
+#### Supported sensors
+
+- BH1750
+- MAX44009
+
+#### Wiring
+
+| Sensor | Flipper Zero |
+| ------ | ------------ |
+| VCC    | 3.3V         |
+| GND    | GND          |
+| SCL    | C0           |
+| SDA    | C1           |
+
+https://lab.flipper.net/apps/lightmeter
 
 ## Tools
 
