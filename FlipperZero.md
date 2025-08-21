@@ -2,6 +2,8 @@ TODO:
 
 - Add https://github.com/djsime1/awesome-flipperzero
 - Add https://awesome-flipper.com/
+
+
 1. [[#Основы|Основы]]
 	1. [[#Основы#Включение|Включение]]
 	2. [[#Основы#Карта microSD|Карта microSD]]
@@ -224,7 +226,27 @@ TODO:
 		20. [[#GPIO#\[J305\]Atomic Dice Roller|[J305]Atomic Dice Roller]]
 		21. [[#GPIO#\[J305\] geiger counter|[J305] geiger counter]]
 		22. [[#GPIO#SPI-Terminal|SPI-Terminal]]
-		23. [[#GPIO#Sentry Safe|Sentry Safe]]
+		23. [[#GPIO#Scope (flipperscope)|Scope (flipperscope)]]
+		24. [[#GPIO#\[TEA5767\] FM Radio|[TEA5767] FM Radio]]
+		25. [[#GPIO#\[ESP32\] Ghost ESP|[ESP32] Ghost ESP]]
+		26. [[#GPIO#7-Segment Output|7-Segment Output]]
+		27. [[#GPIO#GPIO Controller|GPIO Controller]]
+		28. [[#GPIO#GPIO Reader 2|GPIO Reader 2]]
+		29. [[#GPIO#Sentry Safe|Sentry Safe]]
+		30. [[#GPIO#Timelapse|Timelapse]]
+		31. [[#GPIO#\[NMEA\] GPS|[NMEA] GPS]]
+		32. [[#GPIO#\[HC-SR\] Dist. sensor|[HC-SR] Dist. sensor]]
+		33. [[#GPIO#i2c Tools|i2c Tools]]
+		34. [[#GPIO#INA Meter|INA Meter]]
+			1. [[#INA Meter#Supported Sensors:|Supported Sensors:]]
+			2. [[#INA Meter#Wiring|Wiring]]
+		35. [[#GPIO#Lightmeter|Lightmeter]]
+			1. [[#Lightmeter#Lightmeter app for photography|Lightmeter app for photography]]
+			2. [[#Lightmeter#Supported sensors|Supported sensors]]
+			3. [[#Lightmeter#Wiring|Wiring]]
+		36. [[#GPIO#Logic analyzer|Logic analyzer]]
+		37. [[#GPIO#Longwave Clock|Longwave Clock]]
+		38. [[#GPIO#LORA Terminal|LORA Terminal]]
 	4. [[#Apps#Tools|Tools]]
 		1. [[#Tools#Key Copier|Key Copier]]
 13. [[#Flipper Mobile App|Flipper Mobile App]]
@@ -2641,6 +2663,17 @@ https://lab.flipper.net/apps/longwave_clock
 
 ### LORA Terminal
 
+app to control Lora Breakout board.
+
+В качестве готового LoRa модуля можно воспользоваться продукцией от RAK Wireless, например, модулем [RAK11720 Breakout Board](https://store.rakwireless.com/products/rak11720-breakout-board-rak11721?m=3&h=wisduo-breakout), который продается по 18$ за штуку. Можно взять вариант подешевле (без BLE) [RAK3172 Breakout Board](https://store.rakwireless.com/products/wisduo-breakout-board-rak3272s?m=3&h=wisduo-breakout) за 15$. Оба базируются на трансивере **Semtech SX1262.** Заказать можно через [Ali](https://aliexpress.ru/item/1005005328447503.html).
+
+Оба варианта позволяют использовать любую совместимую внешнюю антенну с разъемом RP-SMA Female. Фирменная антенна конечно же идет в комплекте c модулем за такую цену.
+
+На плате также присутствуют все необходимые контакты для подключения модуля по UART и взаимодействия через AT-команды.
+
+Сам модуль функционирует на фирменной прошивке от RAK Wireless – [RUI3](https://www.rakwireless.com/en-us/products/rui3), которая предоставляет разработчикам возможность создавать собственное программное обеспечение с использованием RUI3 API, которое легко интегрируется с популярными средами разработки, такими как Arduino и Visual Studio. Подробнее можно ознакомиться в [документации](https://docs.rakwireless.com/RUI3/#overview).
+
+https://github.com/aafksab/lora_terminal
 
 
 ## Tools
