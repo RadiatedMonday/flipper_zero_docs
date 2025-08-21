@@ -2501,7 +2501,11 @@ https://alexgyver.ru/lessons/spi/
 https://lab.flipper.net/apps/flipperscope
 https://github.com/anfractuosity/flipperscope
 
-Осцилограф из флиппера
+Осцилограф из флиппера. 
+
+```ad-danger
+До 2.5В
+```
 
 ![[freq.jpg]]
 
