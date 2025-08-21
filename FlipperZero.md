@@ -2626,6 +2626,12 @@ An application that suggests settings for your manual camera based on the readin
 
 https://lab.flipper.net/apps/lightmeter
 
+### Logic analyzer
+
+
+
+https://github.com/g3gg0/flipper-logic_analyzer
+
 ## Tools
 
 ### Key Copier
