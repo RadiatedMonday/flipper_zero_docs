@@ -2434,6 +2434,8 @@ To use your Flipper as a USB-to-GPIO/SPI/UART adapter:
 2. Connect your Flipper to your PC via USB. The FlipTDI device will be detected    
 3. Follow the instructions for the PC software you want to use with the adapter
 
+### Flipagotchi
+
 
 
 ### Sentry Safe
