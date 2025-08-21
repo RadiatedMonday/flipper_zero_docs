@@ -2496,12 +2496,24 @@ https://github.com/janwiesemann/flipper-spi-terminal
 Про SPI в ардуино хорошо написано у AlexGyver:
 https://alexgyver.ru/lessons/spi/
 
+### Scope (flipperscope)
+
+https://lab.flipper.net/apps/flipperscope
+https://github.com/anfractuosity/flipperscope
+
+Осцилограф из флиппера
+
+![[freq.jpg]]
+
+
 ### Sentry Safe
 
 Открытие электронного сейфа фирмы Sentry с помощью Flipper Zero с использованием уязвимости в протоколе управления контроллера (UART)
 
 Подробности в видео:
 https://www.youtube.com/watch?v=trpOoM6ugnk
+
+
 
 ## Tools
 
