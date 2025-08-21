@@ -2,7 +2,6 @@ TODO:
 
 - Add https://github.com/djsime1/awesome-flipperzero
 - Add https://awesome-flipper.com/
-
 1. [[#Основы|Основы]]
 	1. [[#Основы#Включение|Включение]]
 	2. [[#Основы#Карта microSD|Карта microSD]]
@@ -207,22 +206,25 @@ TODO:
 			1. [[#AVR Flasher#Wiring|Wiring]]
 			2. [[#AVR Flasher#Supported Microcontrollers|Supported Microcontrollers]]
 		4. [[#GPIO#BarCode ScannerE|BarCode ScannerE]]
-		5. [[#GPIO#[ESP32] Camera Suite|[ESP32] Camera Suite]]
+		5. [[#GPIO#\[ESP32\] Camera Suite|[ESP32] Camera Suite]]
 		6. [[#GPIO#Coffee-EEPROM-FAP|Coffee-EEPROM-FAP]]
 		7. [[#GPIO#RC2014 ColecoVision|RC2014 ColecoVision]]
 		8. [[#GPIO#DAP Link|DAP Link]]
-		9. [[#GPIO#\[ESP32\] WiFi Marauder|\[ESP32\] WiFi Marauder]]
+		9. [[#GPIO#\[ESP32\] WiFi Marauder|[ESP32] WiFi Marauder]]
 		10. [[#GPIO#ESP8266 Deauther|ESP8266 Deauther]]
 		11. [[#GPIO#esp8266_deauther v2|esp8266_deauther v2]]
 		12. [[#GPIO#IFTTT Virtual Button|IFTTT Virtual Button]]
 		13. [[#GPIO#ESP Flasher|ESP Flasher]]
 		14. [[#GPIO#\[W5500\] Ethernet|[W5500] Ethernet]]
 		15. [[#GPIO#Evil captive portal|Evil captive portal]]
-		16. [[#GPIO#\[ESP32\] Evil portal|\[ESP32\] Evil portal]]
+		16. [[#GPIO#\[ESP32\] Evil portal|[ESP32] Evil portal]]
 		17. [[#GPIO#Flashlight|Flashlight]]
 		18. [[#GPIO#FlipTDI|FlipTDI]]
 		19. [[#GPIO#Flipagotchi|Flipagotchi]]
-		20. [[#GPIO#Sentry Safe|Sentry Safe]]
+		20. [[#GPIO#\[J305\]Atomic Dice Roller|[J305]Atomic Dice Roller]]
+		21. [[#GPIO#\[J305\] geiger counter|[J305] geiger counter]]
+		22. [[#GPIO#SPI-Terminal|SPI-Terminal]]
+		23. [[#GPIO#Sentry Safe|Sentry Safe]]
 	4. [[#Apps#Tools|Tools]]
 		1. [[#Tools#Key Copier|Key Copier]]
 13. [[#Flipper Mobile App|Flipper Mobile App]]
@@ -249,6 +251,7 @@ TODO:
 	3. [[#Video Game Module#Осциллограф Scoopy|Осциллограф Scoopy]]
 	4. [[#Video Game Module#Прошивка и схемы|Прошивка и схемы]]
 	5. [[#Video Game Module#Самостоятельная сборка|Самостоятельная сборка]]
+
 
 
 
@@ -2470,7 +2473,28 @@ https://github.com/nmrr/flipperzero-geigercounter
 
 ![[geigercounter.jpg]]
 
+###  SPI-Terminal
 
+SPI TERMINAL - это приложение SPI, которое позволяет вам управлять внешними устройствами с помощью SPI. Ваш Flipper может выступать в качестве ведущего или ведомого устройства SPI. Режим Slave позволяет отслеживать связь между различными периферийными устройствами SPI.
+
+SPI _(Serial Peripheral Interface)_ - интерфейс связи между цифровыми устройствами, по нему МК может общаться с датчиками и модулями или с другими МК. Среди основных интерфейсов связи (UART, I2C, SPI) SPI - самый простой, самый быстрый и неприхотливый, но требует больше пинов для подключения.
+
+- Синхронный (есть тактовая линия)
+- Последовательный (данные передаются бит за битом по одному проводу)
+- Количество пинов: от 2 до 4
+- Скорость: зависит от устройства и качества линии, от 0 Гц до 150 МГц
+- Топология: одно ведущее устройство
+- Количество ведомых на шине: не ограничено
+
+SPI является шиной, т.е. к одним и тем же выводам может быть подключено несколько устройств. На шине есть только одно ведущее устройство - **Master**, остальные - ведомые, **Slave**. Ведущее выбирает, с каким из ведомых взаимодействовать, может отправлять и читать с него данные. Ведущим обычно является основной МК в схеме, а остальные - различные цифровые микросхемы, датчики или вспомогательные МК.
+
+
+Приложение использует низкоуровневый SPI-интерфейс микропроцессора STM32WB55RG. Все данные передаются с помощью субмодуля DMA и могут достигать скорости до 32 Мбит/с в режиме Master и до 24 Мбит/с в режиме Slave.
+
+https://github.com/janwiesemann/flipper-spi-terminal
+
+Про SPI в ардуино хорошо написано у AlexGyver:
+https://alexgyver.ru/lessons/spi/
 
 ### Sentry Safe
 
