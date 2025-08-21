@@ -2628,9 +2628,20 @@ https://lab.flipper.net/apps/lightmeter
 
 ### Logic analyzer
 
-
-
 https://github.com/g3gg0/flipper-logic_analyzer
+
+### Longwave Clock
+
+Decode or demonstrate long wave time signals
+
+Receive long wave time signals through inexpensive GPIO modules, or simulate receipt if you don't own any.
+Supports DCF77 as well as MSF, with more protocols to be implemented in the future.
+
+https://lab.flipper.net/apps/longwave_clock
+
+### LORA Terminal
+
+
 
 ## Tools
 
