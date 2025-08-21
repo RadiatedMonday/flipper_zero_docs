@@ -221,7 +221,8 @@ TODO:
 		16. [[#GPIO#\[ESP32\] Evil portal|\[ESP32\] Evil portal]]
 		17. [[#GPIO#Flashlight|Flashlight]]
 		18. [[#GPIO#FlipTDI|FlipTDI]]
-		19. [[#GPIO#Sentry Safe|Sentry Safe]]
+		19. [[#GPIO#Flipagotchi|Flipagotchi]]
+		20. [[#GPIO#Sentry Safe|Sentry Safe]]
 	4. [[#Apps#Tools|Tools]]
 		1. [[#Tools#Key Copier|Key Copier]]
 13. [[#Flipper Mobile App|Flipper Mobile App]]
@@ -2435,6 +2436,17 @@ To use your Flipper as a USB-to-GPIO/SPI/UART adapter:
 3. Follow the instructions for the PC software you want to use with the adapter
 
 ### Flipagotchi
+
+> Displays the screen of the Pwnagotchi on the Flipper's screen. Interfaces over UART with a Raspberry Pi Zero W running the Pwnagotchi program.
+
+Что такое pwnagotchi:
+
+[проект Pwnagotchi](https://pwnagotchi.ai/) предназначен для исследования беспроводных сетей Wi-Fi. 
+Он [внешне напоминает](https://telegra.ph/Ponagochi-Pwnagotchi-Drug-kompanon-i-instrument-dlya-audita-bezopasnosti-Wi-Fi-setej-08-01) Flipper Zero и построен на базе Raspberry Pi.
+
+Pwnagotchi использует Raspberry Pi Zero W и специально настроенное программное обеспечение, которое позволяет устройству автоматически сканировать и анализировать ближайшие беспроводные сети Wi-Fi.
+
+В своей традиционной модификации понагочи не имеет кнопок и иных физических элементов управления. После загрузки переходит в режим мониторинга, сканирует эфир и в момент подключения клиента к точке доступа, перехватывает и сохраняет на microSD карту файл с пакетами аутентификации (так называемый 4-way handshake). Если зверёк видит пару клиент-точка, то применяет атаку деаутентификации, с последующим перехватом хендшейка в момент обратного подключения клиента.
 
 
 
