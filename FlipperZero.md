@@ -1915,7 +1915,7 @@ Again, keep in mind that this board has no reading functionality - this board on
 
 ### App for this?
 
-- [https://github.com/zacharyweiss/magspoof_flipper](https://github.com/zacharyweiss/magspoof_flipper)
+[[#Magspoof]]
 
 ## RS232
 
