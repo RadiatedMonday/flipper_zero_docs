@@ -2725,6 +2725,44 @@ RadSens – модульный arduino дозиметр на счетчике Г
 
 https://climateguard.ru/radsens_mini/
 
+### RCWL-516 Motion Sensor
+app for RCWL-0516 radar.
+RCWL-0516 is a doppler radar microwave motion sensor module
+
+https://github.com/ahmedafe1/rcwl_0516-Flipperzero
+
+### SD SPI
+Lock and Unlock SD card / Micro SD card through SPI protocol.
+
+Все карты **SD**/**SDHC**, удовлетворяющие стандартам организации SD Group, поддерживают защиту данных паролем на уровне карты. Это означает, что Вы можете назначить пароль (длиной до 16 байт) для любой карты SD. Если установлен пароль, то операции чтения/записи данных карты заблокированы. Если Вы захотите получить доступ к данным карты, то сначала должны ввести пароль.
+
+Пароль хранится на самой карте, не на компьютере, куда подключается карта. Предоставленный по паролю доступ сохраняется только до тех пор, пока карта получает непрерывное питание; если у карты пропадет питание, и пароль в момент пропадания питания не был снят, то при восстановлении питания карты блокировка по паролю снова придет в действие.
+
+#### Pinout
+
+| Flipper Zero | SD Card |
+| ------------ | ------- |
+| 9/3.3V       | +3.3V   |
+| 8/GND        | GND     |
+| 2/A7         | Mosi    |
+| 3/A6         | Miso    |
+| 4/A4         | CS      |
+| 5/B3         | SCK     |
+
+![[scheme_sd_lock.png]]
+
+#### Force Unlock
+force unlock стирает пароль, вместе с данными
+
+https://github.com/Gl1tchub/Flipperzero-SD-SPI
+
+
+### ServoTester
+
+![[servo_test.png]]
+
+PWM generator for testing RC servos. Available modes: Manual, Center, Auto.
+
 
 
 ## Tools
