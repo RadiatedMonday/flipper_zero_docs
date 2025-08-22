@@ -1,8 +1,8 @@
 TODO:
 
 - Add https://github.com/djsime1/awesome-flipperzero
-- Add https://awesome-flipper.com/
 
+**Оглавление*:
 
 1. [[#Основы|Основы]]
 	1. [[#Основы#Включение|Включение]]
@@ -208,34 +208,34 @@ TODO:
 			1. [[#AVR Flasher#Wiring|Wiring]]
 			2. [[#AVR Flasher#Supported Microcontrollers|Supported Microcontrollers]]
 		4. [[#GPIO#BarCode ScannerE|BarCode ScannerE]]
-		5. [[#GPIO#\[ESP32\] Camera Suite|[ESP32] Camera Suite]]
+		5. [[#GPIO#\[ESP32\] Camera Suite|\[ESP32\] Camera Suite]]
 		6. [[#GPIO#Coffee-EEPROM-FAP|Coffee-EEPROM-FAP]]
 		7. [[#GPIO#RC2014 ColecoVision|RC2014 ColecoVision]]
 		8. [[#GPIO#DAP Link|DAP Link]]
-		9. [[#GPIO#\[ESP32\] WiFi Marauder|[ESP32] WiFi Marauder]]
+		9. [[#GPIO#\[ESP32\] WiFi Marauder|\[ESP32\] WiFi Marauder]]
 		10. [[#GPIO#ESP8266 Deauther|ESP8266 Deauther]]
 		11. [[#GPIO#esp8266_deauther v2|esp8266_deauther v2]]
 		12. [[#GPIO#IFTTT Virtual Button|IFTTT Virtual Button]]
 		13. [[#GPIO#ESP Flasher|ESP Flasher]]
-		14. [[#GPIO#\[W5500\] Ethernet|[W5500] Ethernet]]
+		14. [[#GPIO#\[W5500\] Ethernet|\[W5500\] Ethernet]]
 		15. [[#GPIO#Evil captive portal|Evil captive portal]]
-		16. [[#GPIO#\[ESP32\] Evil portal|[ESP32] Evil portal]]
+		16. [[#GPIO#\[ESP32\] Evil portal|\[ESP32\] Evil portal]]
 		17. [[#GPIO#Flashlight|Flashlight]]
 		18. [[#GPIO#FlipTDI|FlipTDI]]
 		19. [[#GPIO#Flipagotchi|Flipagotchi]]
-		20. [[#GPIO#\[J305\]Atomic Dice Roller|[J305]Atomic Dice Roller]]
-		21. [[#GPIO#\[J305\] geiger counter|[J305] geiger counter]]
+		20. [[#GPIO#\[J305\]Atomic Dice Roller|\[J305\]Atomic Dice Roller]]
+		21. [[#GPIO#\[J305\] geiger counter|\[J305\] geiger counter]]
 		22. [[#GPIO#SPI-Terminal|SPI-Terminal]]
 		23. [[#GPIO#Scope (flipperscope)|Scope (flipperscope)]]
-		24. [[#GPIO#\[TEA5767\] FM Radio|[TEA5767] FM Radio]]
-		25. [[#GPIO#\[ESP32\] Ghost ESP|[ESP32] Ghost ESP]]
+		24. [[#GPIO#\[TEA5767\] FM Radio|\[TEA5767\] FM Radio]]
+		25. [[#GPIO#\[ESP32\] Ghost ESP|\[ESP32\] Ghost ESP]]
 		26. [[#GPIO#7-Segment Output|7-Segment Output]]
 		27. [[#GPIO#GPIO Controller|GPIO Controller]]
 		28. [[#GPIO#GPIO Reader 2|GPIO Reader 2]]
 		29. [[#GPIO#Sentry Safe|Sentry Safe]]
 		30. [[#GPIO#Timelapse|Timelapse]]
-		31. [[#GPIO#\[NMEA\] GPS|[NMEA] GPS]]
-		32. [[#GPIO#\[HC-SR\] Dist. sensor|[HC-SR] Dist. sensor]]
+		31. [[#GPIO#\[NMEA\] GPS|\[NMEA\] GPS]]
+		32. [[#GPIO#\[HC-SR\] Dist. sensor|\[HC-SR\] Dist. sensor]]
 		33. [[#GPIO#i2c Tools|i2c Tools]]
 		34. [[#GPIO#INA Meter|INA Meter]]
 			1. [[#INA Meter#Supported Sensors:|Supported Sensors:]]
@@ -247,6 +247,30 @@ TODO:
 		36. [[#GPIO#Logic analyzer|Logic analyzer]]
 		37. [[#GPIO#Longwave Clock|Longwave Clock]]
 		38. [[#GPIO#LORA Terminal|LORA Terminal]]
+		39. [[#GPIO#Magspoof|Magspoof]]
+		40. [[#GPIO#\[Mx2125\] Accelerometer|\[Mx2125\] Accelerometer]]
+		41. [[#GPIO#\[MH-Z19\] CO2 sensor|\[MH-Z19\] CO2 sensor]]
+		42. [[#GPIO#NRF24|NRF24]]
+		43. [[#GPIO#Pokemon Trade Tool|Pokemon Trade Tool]]
+		44. [[#GPIO#RadSens (Radiation Sensor)|RadSens (Radiation Sensor)]]
+		45. [[#GPIO#RCWL-516 Motion Sensor|RCWL-516 Motion Sensor]]
+		46. [[#GPIO#SD SPI|SD SPI]]
+			1. [[#SD SPI#Pinout|Pinout]]
+			2. [[#SD SPI#Force Unlock|Force Unlock]]
+		47. [[#GPIO#ServoTester и ServoTester 2|ServoTester и ServoTester 2]]
+		48. [[#GPIO#Signal Generator|Signal Generator]]
+			1. [[#Signal Generator#PWM Mode|PWM Mode]]
+			2. [[#Signal Generator#Clock Mode|Clock Mode]]
+		49. [[#GPIO#Simultaneous UHF RFID Reader|Simultaneous UHF RFID Reader]]
+		50. [[#GPIO#SPI Mem Manager|SPI Mem Manager]]
+		51. [[#GPIO#\[Mx2125\] Step Counter|\[Mx2125\] Step Counter]]
+		52. [[#GPIO#SWD Probe|SWD Probe]]
+		53. [[#GPIO#UART Terminal|UART Terminal]]
+			1. [[#UART Terminal#Connecting|Connecting]]
+		54. [[#GPIO#u-blox GPS|u-blox GPS]]
+		55. [[#GPIO#Temp sensors reader|Temp sensors reader]]
+			1. [[#Temp sensors reader#List of supported sensors|List of supported sensors]]
+		56. [[#GPIO#\[USPING\] Distance Sensor|\[USPING\] Distance Sensor]]
 	4. [[#Apps#Tools|Tools]]
 		1. [[#Tools#Key Copier|Key Copier]]
 13. [[#Flipper Mobile App|Flipper Mobile App]]
@@ -273,6 +297,7 @@ TODO:
 	3. [[#Video Game Module#Осциллограф Scoopy|Осциллограф Scoopy]]
 	4. [[#Video Game Module#Прошивка и схемы|Прошивка и схемы]]
 	5. [[#Video Game Module#Самостоятельная сборка|Самостоятельная сборка]]
+	6. [[#Video Game Module#Video Game Module Tool|Video Game Module Tool]]
 
 
 
@@ -2852,6 +2877,50 @@ App to display and log data from a u-blox GPS module connected over  I2C to the 
 
 https://lab.flipper.net/apps/ublox
 
+### Temp sensors reader
+
+Application for reading temperature, humidity and pressure sensors like a DHT11/22, DS18B20, BMP280, HTU21 and more.
+
+#### List of supported sensors
+
+- DHT11
+- DHT12
+- DHT21/AM2301
+- DHT22/AM2302
+- DHT20/AM2108
+- AM2320
+- AHT10
+- AHT20
+- SHT30/GXHT30
+- SHT31/GXHT31
+- SHT35/GXHT35
+- LM75
+- BMP180
+- BMP280
+- BME280
+- BME680
+- HTU21D(F)
+- HDC1080
+- DS18B20
+- DS18S20 (DS1820)
+- DS1822
+- MAX31855
+- MAX6675
+
+https://lab.flipper.net/apps/unitemp
+
+### \[USPING\] Distance Sensor
+
+Ultrasound measurments with PING))) Parallax sensor SKU 28015 (3 wires)
+
+Modified by privet971 using PING))) sensor from Parallax 3/23/2023
+
+Use only gpio 13 for TX & RX wired to SIG pin
+
+https://github.com/privet971/FlipperZeroApps/tree/main/usping
+
+
+
 
 ## Tools
 
@@ -3113,7 +3182,7 @@ https://habr.com/ru/companies/ruvds/articles/768658/
 
 ## Гироскоп и акселерометр
 
-Модуль Video Game оснащён 6-осевым датчиком отслеживания положения устройства. В нём используется гироскоп и акселерометр. С его помощью Flipper Zero можно использовать в качестве контроллера в играх или для управления курсором мыши. Специально для демонстрации возможностей компания выпустила игру Air Arkanoid и утилиту Air Mouse. Их можно установить с помощью [мобильного приложения](https://flpr.app/) Flipper.
+Модуль Video Game оснащён 6-осевым датчиком отслеживания положения устройства. В нём используется гироскоп и акселерометр. С его помощью Flipper Zero можно использовать в качестве контроллера в играх или для управления курсором мыши. Специально для демонстрации возможностей компания выпустила игру [Air Arkanoid](https://lab.flipper.net/apps/air_arkanoid) и утилиту [Air Mouse](https://lab.flipper.net/apps/vgm_air_mouse). Их можно установить с помощью [[#Flipper Mobile App]] Flipper.
 
 ![[game_module_3.gif]]
 
@@ -3139,3 +3208,7 @@ https://habr.com/ru/companies/ruvds/articles/768658/
 https://github.com/EstebanFuentealba/Flipper-Zero-Video-Game-Module-DIY
 
 
+## Video Game Module Tool
+
+Приложение для обновления прошивки
+https://lab.flipper.net/apps/video_game_module_tool
