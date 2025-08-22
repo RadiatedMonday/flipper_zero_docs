@@ -2701,8 +2701,29 @@ https://lab.flipper.net/apps/mh_z19
 - \[NRF24\] Scanner
 - \[NRF24\] Sniffer
 - \[NRF24\] Sniffer MS
-- Channel Scanner
-- Tool
+- \[NRF24\] Channel Scanner
+- \[NRF24\] Tool
+
+### Pokemon Trade Tool
+
+![[pockemon.png]]
+
+Pokemon exchange from Flipper Zero to Game Boy, supports Generation I & II non-Japanese games
+
+### RadSens (Radiation Sensor)
+
+App for RadSense radiation measurement module by ClimateGuard
+
+RadSens – модульный arduino дозиметр на счетчике Гегера-Мюллера и интерфейсом I2C. Трубка СМБ20 включена в комплект поставки. Трубка установлена в держатели и может быть быстро демонтирована. В качестве исходящего пакета по I2C, датчик формирует 3 значения:
+
+- Интенсивность излучения (мкР/ч) c алгоритмом сильного усреднения, для точного измерения излучения за большой промежуток времени (500с)
+- Интенсивность излучения (мкР/ч) c алгоритмом регистрации локальных источников и загрязнений с динамическим диапазоном времени расчета
+- Количество зарегистрированных импульсов с момента последнего запроса по шине I2C
+
+![[radsens.mp4]]
+
+
+https://climateguard.ru/radsens_mini/
 
 
 
