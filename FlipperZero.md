@@ -2791,6 +2791,8 @@ In Clock mode, the signal is generated from the clock signal of the microcontrol
 
 Simultaneous UHF RFID Reader that supports the M6E Nano, M7E Hecto, and YRM1000 series Readers. Read up to 150 UHF tags per second \[Using ThingMagic Readers\]!
 
+для YRM100 есть отдельное приложение *\[YRM100\] UHF RFID
+
 ### SPI Mem Manager
 
 Application for reading and writing 25-series SPI memory chips
@@ -2808,6 +2810,47 @@ https://lab.flipper.net/apps/stepcounter
 
 ### SWD Probe
 
+Современные микроконтроллеры поддерживают двухпроводной интерфейс отладки SWD, что значительно упрощает подключение. При обратном проектировании найти эти два контакта намного проще, чем при использовании JTAG, когда вам приходилось подключать два или более контакта. Однако поиск двух контактов по-прежнему требует небольшой работы, которая еще больше упрощается с помощью этого приложения.
+
+Это приложение пытается определить правильный ответ SWD на выбранных вами проводах и подает звуковой сигнал, когда вы находите правильные контакты, показывая обнаруженный идентификационный регистр и, что более важно, распиновку SWD. Не имеет значения, какие два вывода вы выберете, просто выберите любые два из GPIO.
+
+Приложение отправляет пакеты и сканирует ответ по всем выводам, а затем уточняет их в течение нескольких попыток.
+
+Для пользователя это просто - подключите две тестовые иглы, подключите очевидный вывод GND и протестируйте все тестовые площадки. 
+
+https://lab.flipper.net/apps/swd_probe
+
+  
+### UART Terminal
+
+- Reading from UART in text or hex mode
+- Sending commands
+- Sending AT commands
+- Sending fast commands
+- Sending binary packets (in hex)
+- Baudrate selection
+- UART pins selection (2 options)
+
+#### Connecting
+
+| Device UART interface | Flipper Zero pin (default) | Flipper Zero pin (option) |
+| :-------------------: | :------------------------: | :-----------------------: |
+|          RX           |           13 TX            |           15 TX           |
+|          TX           |           14 RX            |           16 TX           |
+|          GND          |         8, 18 GND          |         8, 18 GND         |
+
+Info: If possible, do not power your devices from 3V3 (pin 9) Flipper Zero. It does not support hot plugging.
+
+![[uart_term.jpg]]
+
+https://lab.flipper.net/apps/uart_terminal
+
+
+### u-blox GPS
+
+App to display and log data from a u-blox GPS module connected over  I2C to the Flipper. This app can also synchronize the Flipper's internal clock to GPS time.
+
+https://lab.flipper.net/apps/ublox
 
 
 ## Tools
