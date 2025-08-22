@@ -2,7 +2,7 @@ TODO:
 
 - Add https://github.com/djsime1/awesome-flipperzero
 
-**Оглавление*:
+***Оглавление***:
 
 1. [[#Основы|Основы]]
 	1. [[#Основы#Включение|Включение]]
@@ -2117,14 +2117,21 @@ Cyfral и Metakom не принимают никакие команды. При 
   
 Часто используют универсальные ключи, они же “вездеходы”, подходящие на группу домофонов, например для всего района. Этот ключ может быть один на город, один на группу домов, может быть дефолтным для какой-то модели, а может и вовсе отсутствовать.
 
-Словари для iButton Fuzzer и RFID Fuzzer:
+Словари для [iButton Fuzzer](https://lab.flipper.net/apps/fuzzer_ibtn) и [RFID Fuzzer](https://lab.flipper.net/apps/fuzzer_rfid) можно найти по ссылкам:
+
 https://t.me/flipperzero_unofficial_ru/37058
 https://t.me/flipperzero_unofficial_ru/37072
+
+или в папке [dictionary ](https://github.com/RadiatedMonday/flipper_zero_docs/tree/main/dictionary)
 
 Словарики вездеходов можно закинуть на карту и выбирать в программе iButton Fuzzer:
 Кнопка `DOWN` -> **Load UIDs from file**
 
 Или просто использовать iButton Fuzzer с дефолтными кодами
+
+
+---
+
 
 # Bad USB
 TODO
