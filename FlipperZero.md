@@ -2677,6 +2677,34 @@ https://github.com/aafksab/lora_terminal
 
 ### Magspoof
 
+Enables wireless transmission of magstripe data
+
+Модуль: [[#Flipper Zero Magspoof Module]]
+
+https://github.com/zacharyweiss/magspoof_flipper
+
+
+### \[Mx2125\] Accelerometer
+
+- Author is [@jamisonderek](https://github.com/jamisonderek "GitHub User: jamisonderek"). [https://github.com/jamisonderek/flipper-zero-tutorials/tree/main/gpio](https://github.com/jamisonderek/flipper-zero-tutorials/tree/main/gpio)
+
+### \[MH-Z19\] CO2 sensor
+
+Measuring carbon dioxide (CO2) with mh-z19
+https://lab.flipper.net/apps/mh_z19
+
+### NRF24
+Приложения для модуля [[#Радиомодуль 2.4 ГГц NRF24L01 Mouse Hunter]] :
+- \[NRF24\] Batch
+- \[NRF24\] Mouse Jacker
+- \[NRF24\] Mouse Jacker MS
+- \[NRF24\] Scanner
+- \[NRF24\] Sniffer
+- \[NRF24\] Sniffer MS
+- Channel Scanner
+- Tool
+
+
 
 ## Tools
 
