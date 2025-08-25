@@ -3084,17 +3084,43 @@ https://lab.flipper.net/apps/ir_scope
 
 emulate infrared signals of different LIDARs  to test a LIDAR jammer
 
-[# Детектируем, разбираем, изучаем, паяем и глушим полицейские радары и лидары](https://habr.com/ru/companies/neuronspace/articles/261891/
+Статья для общего развития:
+[Детектируем, разбираем, изучаем, паяем и глушим полицейские радары и лидары](https://habr.com/ru/companies/neuronspace/articles/261891/)
+
+https://lab.flipper.net/apps/lidar_emulator
+
+
+### Xbox Controller
+
+remote control for Xbox One
+
+https://lab.flipper.net/apps/xbox_controller
+
 
 ## Media
+
+### BPM Tapper
+
+Тапаем для измерения BPM
+
+https://lab.flipper.net/apps/bpm_tapper
+
+### Flipper Keyller
+
+Бесполезная хрень. Эмулирует 8 звуковых эффектов из 80-х.
+
+https://lab.flipper.net/apps/executor_keychain
 
 ### Music
 
 `FlipperMusicRTTTL` - Collection of musics for FlipperZero Music Player. 
 https://github.com/neverfa11ing/FlipperMusicRTTTL
 
+#### Flizzer Tracker
 
+ chiptune tracker. Supports 4 channels, external (through PA6 pin) and internal (built-in buzzer) audio output
 
+https://lab.flipper.net/apps/flizzer_tracker
 
 ## Tools
 
