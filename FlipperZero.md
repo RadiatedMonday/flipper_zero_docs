@@ -3111,6 +3111,19 @@ https://lab.flipper.net/apps/bpm_tapper
 
 https://lab.flipper.net/apps/executor_keychain
 
+### Metronome
+
+Метроном
+
+https://lab.flipper.net/apps/metronome
+
+
+### Morse Code
+
+Парсер морзянки
+
+https://lab.flipper.net/apps/morse_code
+
 ### Music
 
 `FlipperMusicRTTTL` - Collection of musics for FlipperZero Music Player. 
@@ -3120,7 +3133,16 @@ https://github.com/neverfa11ing/FlipperMusicRTTTL
 
  chiptune tracker. Supports 4 channels, external (through PA6 pin) and internal (built-in buzzer) audio output
 
+Подробные инструкции есть тут:
+https://github.com/LTVA1/flizzer_tracker/wiki
+
 https://lab.flipper.net/apps/flizzer_tracker
+
+#### Music Player
+
+play RTTL music files
+
+https://lab.flipper.net/apps/music_player
 
 ## Tools
 
