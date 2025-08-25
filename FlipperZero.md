@@ -2947,12 +2947,37 @@ This application can be used to test Wiegand readers and keypads. It can save th
 
 https://lab.flipper.net/apps/wiegand_reader
 
+### WiFi Mapping
+todo
+
+### \[WiFi\] Scanner
+todo
+
+### Wi EC Analyzer
+todo
+
+### \[GPIO\] Wire Tester
+todo
+
+### \[WS2812B\] LED Tester
+todo
+
+## Infrared
+
+### Flame RNG
+
+It uses the IR sensor on the Flipper Zero to gather entropy from IR sources (such as a lighter) to seed a random number generator. The idea is that fire and other similar IR sources are not predictable sources of data, and thus it can be a reliable source of entropy. Obviously the flipper doesn't gather enough data (unless you _really_ like flicking a lighter near your nearly $200 toy) to get any sort of decent entropy, this is more of a PoC.
+
+https://lab.flipper.net/apps/flame_rng
+
+
 ## Media
 
 ### Music
 
 `FlipperMusicRTTTL` - Collection of musics for FlipperZero Music Player. 
 https://github.com/neverfa11ing/FlipperMusicRTTTL
+
 
 
 
