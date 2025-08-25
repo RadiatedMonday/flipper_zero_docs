@@ -3080,7 +3080,11 @@ https://lab.flipper.net/apps/ir_scope
 
 ### LIDAR Emulator
 
+![[lidar.png]]
 
+emulate infrared signals of different LIDARs  to test a LIDAR jammer
+
+[# Детектируем, разбираем, изучаем, паяем и глушим полицейские радары и лидары](https://habr.com/ru/companies/neuronspace/articles/261891/
 
 ## Media
 
