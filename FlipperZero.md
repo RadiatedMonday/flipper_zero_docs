@@ -1,6 +1,3 @@
-TODO:
-
-- Add https://github.com/djsime1/awesome-flipperzero
 
 ***Оглавление***:
 
@@ -2926,6 +2923,22 @@ Use only gpio 13 for TX & RX wired to SIG pin
 
 https://github.com/privet971/FlipperZeroApps/tree/main/usping
 
+### WHC SWIO Flasher
+
+![[whc.png]]
+
+A WHC CH32V003 debugger/flasher tool
+
+https://lab.flipper.net/apps/wch_swio_flasher
+
+
+### Wiegand Reader
+
+![[wiegant.png]]
+
+This application can be used to test Wiegand readers and keypads. It can save the data to a file, and can load and replay the data. Timings are measured and displayed; which can be used to help debug Wiegand readers.
+
+https://lab.flipper.net/apps/wiegand_reader
 
 ## Media
 
