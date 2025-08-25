@@ -3076,6 +3076,10 @@ Intervalometer for Canon, Nikon, and Sony cameras. Uses IR shutter release.
 
 App allows to see incoming IR signals.
 
+https://lab.flipper.net/apps/ir_scope
+
+### LIDAR Emulator
+
 
 
 ## Media
