@@ -2151,7 +2151,7 @@ https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/Zero-Lazagne
 https://github.com/atomiczsec/My-Payloads
 https://github.com/emptythevoid/flipperzero/tree/main/badusb
 https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/s4dic%20-%20BadUSB/passwordgrabber
-
+https://github.com/MarkCyber/BadUSB
 
 
 
@@ -2926,6 +2926,13 @@ Use only gpio 13 for TX & RX wired to SIG pin
 
 https://github.com/privet971/FlipperZeroApps/tree/main/usping
 
+
+## Media
+
+### Music
+
+`FlipperMusicRTTTL` - Collection of musics for FlipperZero Music Player. 
+https://github.com/neverfa11ing/FlipperMusicRTTTL
 
 
 
