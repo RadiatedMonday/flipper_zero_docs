@@ -3102,34 +3102,25 @@ https://lab.flipper.net/apps/xbox_controller
 ### BPM Tapper
 
 Тапаем для измерения BPM
-
 https://lab.flipper.net/apps/bpm_tapper
 
 ### Flipper Keyller
 
 Бесполезная хрень. Эмулирует 8 звуковых эффектов из 80-х.
-
 https://lab.flipper.net/apps/executor_keychain
 
 ### Metronome
 
 Метроном
-
 https://lab.flipper.net/apps/metronome
 
 
 ### Morse Code
 
 Парсер морзянки
-
 https://lab.flipper.net/apps/morse_code
 
-### Music
-
-`FlipperMusicRTTTL` - Collection of musics for FlipperZero Music Player. 
-https://github.com/neverfa11ing/FlipperMusicRTTTL
-
-#### Flizzer Tracker
+### Flizzer Tracker
 
  chiptune tracker. Supports 4 channels, external (through PA6 pin) and internal (built-in buzzer) audio output
 
@@ -3138,11 +3129,22 @@ https://github.com/LTVA1/flizzer_tracker/wiki
 
 https://lab.flipper.net/apps/flizzer_tracker
 
-#### Music Player
+### Music Player
 
 play RTTL music files
 
+Музыку брать тут:
+`FlipperMusicRTTTL` - Collection of musics for FlipperZero Music Player. 
+https://github.com/neverfa11ing/FlipperMusicRTTTL
+
 https://lab.flipper.net/apps/music_player
+
+### Ocarina
+
+Бесполезная пищалка
+
+### Text to SAM
+
 
 ## Tools
 
