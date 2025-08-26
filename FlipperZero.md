@@ -1005,7 +1005,7 @@ RFID-протокол Indala был разработан компанией Moto
 
 ## Запись болванки 125 кГц
 Существуют специальные типы карт болванок, на которые можно записать любой из трех протоколов описанных выше (EM-Marin, HID Prox, Indala). Самый популярный тип болванок — это T5577. Для записи болванки нужно перейти в меню `125 kHz RFID —> Saved`, выбрать нужный ключ и нажать `Write`.
-
+Так же возможна запись нескольких ключей на одну болванку, см [[#T5577 Multiwriter]]
 
 ## Чипы в котах и собаках
 
@@ -3276,6 +3276,15 @@ RFID potential universal keys generator
 Генерирует ключи для fuzzerа на основе имеющегося
 https://lab.flipper.net/apps/key_generator
 
+### T5577 Multiwriter
+app for writing several keys to one T5577
+https://github.com/Leptopt1los/t5577_multiwriter
+подробности:
+https://forum.dangerousthings.com/t/hack-store-2-to-3-different-em41xx-on-a-single-t5577/12116
+
+### T5577 Raw Writer
+
+https://lab.flipper.net/apps/t5577_writer
 
 ## Tools
 
