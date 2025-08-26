@@ -2115,6 +2115,7 @@ Cyfral и Metakom не принимают никакие команды. При 
   
 Часто используют универсальные ключи, они же “вездеходы”, подходящие на группу домофонов, например для всего района. Этот ключ может быть один на город, один на группу домов, может быть дефолтным для какой-то модели, а может и вовсе отсутствовать.
 
+### Словари для Fuzzer
 Словари для [iButton Fuzzer](https://lab.flipper.net/apps/fuzzer_ibtn) и [RFID Fuzzer](https://lab.flipper.net/apps/fuzzer_rfid) можно найти по ссылкам:
 
 https://t.me/flipperzero_unofficial_ru/37058
@@ -2955,7 +2956,7 @@ https://github.com/carvilsi/flipper0-wifi-map/tree/main
 
 ### \[WiFi\] Scanner
 WiFi Scanner Module for FlipperZero based on ESP8266/ESP32
-
+https://github.com/SequoiaSan/FlipperZero-WiFi-Scanner_Module?tab=readme-ov-file
 
 ### Wii EC Analyzer
 application to test Wii Extension Controllers
@@ -3257,7 +3258,22 @@ An NTAG215 parser, writer, emulator, remixer, duplicator
 https://lab.flipper.net/apps/weebo
 
 ## RFID
+### RFID Beacon
+A letter/number/symbol [Morse](https://fr.wikipedia.org/wiki/Code_Morse_international) beacon on **RFID**/**NFC** interfaces of the **Flipper Zero**
+**Flipper Zero** has multiple RF interfaces (RFID, NFC and UHF) and it's possible to transmit raw data over these interfaces.
+This application can transmit the whole alphabet (A to Z), numbers (0 to 9) and symbols in [Morse](https://fr.wikipedia.org/wiki/Code_Morse_international) via **RFID** (125 kHz) and **NFC** (13.56 MHz) interfaces.
+On **RFID** (125 kHz) range is about 5 meters with a small loop antenna. With an amplified loop, the range can extend to 15 meters according to my measurements.
+On **NFC** (13.56 MHz) range is about 50 meters with a small loop antenna.
+https://github.com/nmrr/flipperzero-letterbeacon
 
+### RFID Fuzzer
+Fuzzer for lfrfid readers
+см [[#Словари для Fuzzer]]
+https://lab.flipper.net/apps/fuzzer_rfid
+
+### EM4100 Key generator
+RFID potential universal keys generator
+https://lab.flipper.net/apps/key_generator
 
 
 ## Tools
