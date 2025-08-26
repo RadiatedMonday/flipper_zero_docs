@@ -3273,6 +3273,7 @@ https://lab.flipper.net/apps/fuzzer_rfid
 
 ### EM4100 Key generator
 RFID potential universal keys generator
+Генерирует ключи для fuzzerа на основе имеющегося
 https://lab.flipper.net/apps/key_generator
 
 
