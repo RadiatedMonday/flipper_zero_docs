@@ -3307,6 +3307,16 @@ https://github.com/zinongli/T5577_Raw_Writer
 Отправка сообщений через Sub-Ghz на другой флиппер
 https://lab.flipper.net/apps/esubghz_chat
 
+### Music to Sub-GHz Radio
+Converts Flipper music files (.FMF and .TXT) into Sub-GHz files (.SUB) file format that can be transmitted over the Sub-GHz radio
+https://lab.flipper.net/apps/fmf_to_sub
+
+### Genie Door Recorder
+This application extracts the codes from a Genie garage door remote into a .GNE file. It also plays back a .GNE file to a Genie garage door opener.
+https://lab.flipper.net/apps/genie_record
+
+### Restaurant Pager Trigger
+
 
 ## Tools
 
