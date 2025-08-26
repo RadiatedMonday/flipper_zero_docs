@@ -2949,19 +2949,27 @@ This application can be used to test Wiegand readers and keypads. It can save th
 https://lab.flipper.net/apps/wiegand_reader
 
 ### WiFi Mapping
-todo
+![[wifi_map.png]]
+An ESP32 and FlipperZero wifi mapping.
+https://github.com/carvilsi/flipper0-wifi-map/tree/main
 
 ### \[WiFi\] Scanner
-todo
+WiFi Scanner Module for FlipperZero based on ESP8266/ESP32
 
-### Wi EC Analyzer
-todo
+
+### Wii EC Analyzer
+application to test Wii Extension Controllers
+https://github.com/csBlueChip/FlipperZero_WiiEC
 
 ### \[GPIO\] Wire Tester
-todo
+app that beeps if a wire is continuous
+![[wire_tester.png]]
+https://gitlab.com/unixispower/flipper-wire-tester
+
 
 ### \[WS2812B\] LED Tester
-todo
+This application is used to test WS2812B LEDs. You can connect the WS2812B LEDs to any available GPIO pin. If you are powering the LEDs using the Flipper Zero, be sure to consider the power requirements of the LEDs. The 3V3 pin has a 1200mA max current (~4 watts). 5V pin has a 1000mA max current (5 watts).
+https://github.com/jamisonderek/flipper-zero-tutorials/tree/main/gpio/ws2812b_tester
 
 ## Infrared
 
@@ -3235,6 +3243,21 @@ Seos compatible reader/emulator
 **The app uses all zero keys by default**. It uses an ADF OID of 030107090000000000 ("0.3.1.7.9.0.0.0.0.0").  
 If you'd like to use your own keys/ADF OID, use the format of the 'keys-example.txt' to specify them, and place into 'SD Card/apps_data/seos/keys.txt'
 https://lab.flipper.net/apps/seos
+
+### VB Migration Assistant
+app is designed to make transferring your characters from VB Lab and VBC  
+Lab more convenient.
+The Vital Bracelet Arena app is going to be the new companion app for the Vital Bracelet series of fitness bracelet toys, however the app does not support account linking from VB Lab and VBC Lab, and requires you to transfer characters one by one from those apps through your Vital Bracelet.
+https://github.com/GMMan/flipperzero-vb-migrate/blob/master/README.md
+https://lab.flipper.net/apps/vb_migrate
+
+### Weebo
+An NTAG215 parser, writer, emulator, remixer, duplicator
+**Put key_retail.bin into 'SD Card/apps_data/weebo/**
+https://lab.flipper.net/apps/weebo
+
+## RFID
+
 
 
 ## Tools
