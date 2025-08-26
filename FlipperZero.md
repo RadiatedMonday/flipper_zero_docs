@@ -3394,8 +3394,58 @@ https://lab.flipper.net/apps/weather_station
 ## Tools
 
 ### Analog Clock
+todo
 
 ### Barcode App
+todo
+
+### Brainfuck
+todo
+
+### Caesar Cipher
+todo
+
+### Calculator
+todo
+
+### Calendar
+todo
+
+### Clock
+todo
+
+### Count Down Timer
+todo
+
+### Counter
+todo
+
+### DCF77 Transmitter
+todo
+
+### DCF77 Clock Spoof
+todo
+
+### DTMF Dolphin
+todo
+
+### FlipBIP Crypto Wallet
+todo
+
+### Flipp Pomodoro
+todo
+
+### Chronometer
+todo
+
+### Ford Radio Codes
+todo
+
+### HEX Editor
+todo
+
+### HEX Viewer
+todo
 
 ### Key Copier
 
@@ -3411,6 +3461,32 @@ https://github.com/ervanalb/keygen
 
 ![[key_copy.mp4]]
 
+### Multi Converter
+todo
+
+### Multi Counter
+todo
+
+### RFID detector
+todo
+
+### NickName Generator
+todo
+
+### Nightstand Clock
+todo
+
+### Password Generator
+todo
+
+### Pomodoro Timer
+todo
+
+### Programmer Calculator
+todo
+
+### QR Code
+todo
 
 
 
