@@ -2305,6 +2305,8 @@ Flipper Application for monitoring PC resources
 
 ## GPIO
 
+todo add apps https://lab.flipper.net/apps/category/gpio
+
 ### BMI Air Mouse
 
 The app allows you to turn your Flipper into a USB or Bluetooth air mouse
@@ -3390,6 +3392,10 @@ Receive weather data from a wide range of supported Sub-1GHz remote sensor
 https://lab.flipper.net/apps/weather_station
 
 ## Tools
+
+### Analog Clock
+
+### Barcode App
 
 ### Key Copier
 
