@@ -3261,6 +3261,10 @@ An NTAG215 parser, writer, emulator, remixer, duplicator
 **Put key_retail.bin into 'SD Card/apps_data/weebo/**
 https://lab.flipper.net/apps/weebo
 
+### UDECard
+Analyse student ID cards from the University of Duisburg-Essen (Intercard).
+https://lab.flipper.net/apps/udecard
+
 ## RFID
 ### RFID Beacon
 A letter/number/symbol [Morse](https://fr.wikipedia.org/wiki/Code_Morse_international) beacon on **RFID**/**NFC** interfaces of the **Flipper Zero**
@@ -3311,6 +3315,10 @@ https://github.com/zinongli/T5577_Raw_Writer
 Отправка сообщений через Sub-Ghz на другой флиппер
 https://lab.flipper.net/apps/esubghz_chat
 
+### Flipper Share
+Direct file transfer between flippers via Sub-GHz
+https://lab.flipper.net/apps/flipper_share
+
 ### Music to Sub-GHz Radio
 Converts Flipper music files (.FMF and .TXT) into Sub-GHz files (.SUB) file format that can be transmitted over the Sub-GHz radio
 https://lab.flipper.net/apps/fmf_to_sub
@@ -3318,6 +3326,10 @@ https://lab.flipper.net/apps/fmf_to_sub
 ### Genie Door Recorder
 This application extracts the codes from a Genie garage door remote into a .GNE file. It also plays back a .GNE file to a Genie garage door opener.
 https://lab.flipper.net/apps/genie_record
+
+### HC-11 modem
+HC-11 wireless modem emulator for the Flipper Zero
+https://lab.flipper.net/apps/hc11_modem
 
 ### Restaurant Pager Trigger
 запускает уведомления на пейджеры на фудкортах
@@ -3356,6 +3368,26 @@ https://github.com/derskythe/flipperzero-shapshup
 ### Sub-GHz bruteforcer
 Брутфорс Sub-Ghz
 https://github.com/derskythe/flipperzero-subbrute
+
+  
+### Sub-GHz Remote
+SubGhz Remote, uses up to 5 .sub files
+With this application, you can combine up to 5 .sub files into one remote, and use flipper as a remote with multiple buttons.
+https://lab.flipper.net/apps/subghz_remote_ofw
+
+### Sub-GHz Scheduler
+Send a Sub-GHz signal repeatedly at a given interval.
+Individual \*.sub or playlist \*.txt files can be used for Sub-GHz interval transmission. Discrete intervals from 10 seconds to 12 hours are selectable, as well as repeating transmissions for individual data. See repo for description of settings and modes.
+https://lab.flipper.net/apps/subghz_scheduler
+
+### TPMS Reader
+Датчики давления в шинах
+https://github.com/wosk/flipperzero-tpms/tree/main
+
+### Weather Station
+Receive weather data from a wide range of supported Sub-1GHz remote sensor
+![[weather.png]]
+https://lab.flipper.net/apps/weather_station
 
 ## Tools
 
