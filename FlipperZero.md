@@ -1409,6 +1409,7 @@ Check if you have a compatible Gen1, Gen2, or Gen4 magic card by using the **Che
 ![[flipper_zero_emulate_nfc_business_card.mp4]]
 
 Кроме отдельного приложения на Android можно воспользоваться сайтом https://nfc.flippertools.net/
+Также существует приложение [[#NFC Maker]]
 
 ---
 
@@ -3073,77 +3074,162 @@ Intervalometer for Canon, Nikon, and Sony cameras. Uses IR shutter release.
   
 ### IR Scope
 ![[irscope.png]]
-
 App allows to see incoming IR signals.
-
 https://lab.flipper.net/apps/ir_scope
 
-### LIDAR Emulator
 
+### LIDAR Emulator
 ![[lidar.png]]
 
 emulate infrared signals of different LIDARs  to test a LIDAR jammer
-
 Статья для общего развития:
 [Детектируем, разбираем, изучаем, паяем и глушим полицейские радары и лидары](https://habr.com/ru/companies/neuronspace/articles/261891/)
-
 https://lab.flipper.net/apps/lidar_emulator
 
 
 ### Xbox Controller
-
 remote control for Xbox One
-
 https://lab.flipper.net/apps/xbox_controller
 
 
 ## Media
 
 ### BPM Tapper
-
 Тапаем для измерения BPM
 https://lab.flipper.net/apps/bpm_tapper
 
 ### Flipper Keyller
-
 Бесполезная хрень. Эмулирует 8 звуковых эффектов из 80-х.
 https://lab.flipper.net/apps/executor_keychain
 
 ### Metronome
-
 Метроном
 https://lab.flipper.net/apps/metronome
 
 
 ### Morse Code
-
 Парсер морзянки
 https://lab.flipper.net/apps/morse_code
 
 ### Flizzer Tracker
-
- chiptune tracker. Supports 4 channels, external (through PA6 pin) and internal (built-in buzzer) audio output
-
+chiptune tracker. Supports 4 channels, external (through PA6 pin) and internal (built-in buzzer) audio output
 Подробные инструкции есть тут:
 https://github.com/LTVA1/flizzer_tracker/wiki
-
 https://lab.flipper.net/apps/flizzer_tracker
 
 ### Music Player
-
 play RTTL music files
-
 Музыку брать тут:
 `FlipperMusicRTTTL` - Collection of musics for FlipperZero Music Player. 
 https://github.com/neverfa11ing/FlipperMusicRTTTL
-
 https://lab.flipper.net/apps/music_player
 
 ### Ocarina
-
 Бесполезная пищалка
 
 ### Text to SAM
+Convert text to speech on your Flipper Zero with SAM (Software Automatic Mouth).
+Похоже на ранний TTS Хокинга
+https://lab.flipper.net/apps/text2sam
+
+### Tuning Fork
+Сомнительный камертон для настройки инструментов
+https://lab.flipper.net/apps/tuning_fork
+
+### USB-MIDI
+Превращает флиппер в MIDI инструмент. Теоритически. У меня так и не запустился
+https://lab.flipper.net/apps/usb_midi
+
+### Video Player
+Видеоплеер для любителей разрешения 96x64
+https://lab.flipper.net/apps/video_player
+
+## NFC
+
+### Metroflip
+Metroflip is a multi-protocol metro card reader app for the Flipper Zero, inspired by the Metrodroid project. It enables the parsing and analysis of metro cards from transit systems around the world, providing a proof-of-concept for exploring transit card data in a portable format.
+
+#### Supported Cards
+
+- **Bip!**
+- **Charliecard**
+- **Clipper**
+- **ITSO**
+- **Metromoney**
+- **myki**
+- **Navigo**
+- **Opal**
+- **Opus**
+- **Rav-Kav**
+- **RENFE**
+- **Troika**
+- **Suica**
+https://lab.flipper.net/apps/metroflip
+
+
+### MIFARE Classic Editor
+An application for viewing and editing MIFARE Classic .nfc files without access to an external device.
+https://lab.flipper.net/apps/mfc_editor
+
+### MFKey
+MIFARE Classic key recovery tool
+см [[#MFKey32 attack]]
+https://lab.flipper.net/apps/mfkey
+
+  
+### Mifare Fuzzer
+App emulates Mifare Classic cards with various UIDs to check how reader reacts on them
+https://lab.flipper.net/apps/mifare_fuzzer
+
+### NFC APDU Runner
+NFC APDU Runner is a Flipper Zero application for reading and executing APDU commands on NFC cards. This application allows users to load APDU commands from script files, send them to NFC cards, and view the response results. It also includes NARD (NFC APDU Runner Response Decoder) for parsing and analyzing APDU responses using customizable format templates, and TLV data extraction capabilities. The project now supports a Web interface analysis platform for more comprehensive NFC data analysis and visualization.
+
+#### Features
+- Support for loading APDU commands from script files
+- Web interface analysis platform for comprehensive NFC data analysis and visualization
+- Support for multiple card types (ISO14443-4A and ISO14443-4B implemented)
+- User-friendly interface with operation prompts
+- Execution logging for debugging
+- Ability to save execution results to files
+- NARD (NFC APDU Runner Response Decoder) for parsing and analyzing APDU responses
+- Template-based decoding of APDU responses with custom format templates
+- TLV data extraction and parsing capabilities
+
+https://github.com/SpenserCai/nfc_apdu_runner
+
+### NFC-Eink
+emulation and writing to NFC Eink tags from Waveshare and Goodisplay
+https://lab.flipper.net/apps/nfc_eink
+
+### Nfc Magic
+Application for writing to NFC tags with modifiable sector 0
+см [[#Запись NFC]]
+https://lab.flipper.net/apps/nfc_magic
+
+  
+### NFC Maker
+Create NFC files for BT MACs, Contacts, Links, Emails, Phones, Text and WiFis
+см. [[#Создание NFC]]
+https://lab.flipper.net/apps/nfc_maker
+
+### NFC Playlist
+A Tool used to running through a list of NFC cards
+https://github.com/acegoal07/FlipperZero_NFC_Playlist
+
+### Passport Reader
+eMRTD Reader
+eMTRD are secured to prevent people from reading the data on a passport just by bumping into it. The data is secured using a key based on the passport number, date of birth, and date of expiry. A real passport machine reads these values from the MRZ (Machine Readable Zone, the ones with ">") using a camera. For the app, you have to enter the values manually. The app will then generate the key and read the data using a system called BAC.
+https://lab.flipper.net/apps/passy
+
+###  PicoPass (HID iClass)
+App to communicate with PicoPass(iClass) tags
+https://lab.flipper.net/apps/picopass
+
+### Seader
+for reading credential from HID iClass, iClass SE, MFC SE, Desfire EV1/EV2, and Seos. Credentials can be saved in an agnostic format, or as various Flipper formats (Prox, MFC, iClass, iClass SR), depending on the original type.  
+Requires addon: UART to mini-SIM adapter and HID SAM.  
+See full readme for wiring and more information: [https://github.com/bettse/seader/blob/main/readme.md](https://github.com/bettse/seader/blob/main/readme.md)
+
 
 
 ## Tools
