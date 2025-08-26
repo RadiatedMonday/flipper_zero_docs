@@ -3304,7 +3304,8 @@ https://github.com/zinongli/T5577_Raw_Writer
 ## Sub-Ghz
   
 ### Enhanced Sub-Ghz Chat
-
+Отправка сообщений через Sub-Ghz на другой флиппер
+https://lab.flipper.net/apps/esubghz_chat
 
 
 ## Tools
