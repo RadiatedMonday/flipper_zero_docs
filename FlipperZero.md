@@ -3283,8 +3283,9 @@ https://github.com/Leptopt1los/t5577_multiwriter
 https://forum.dangerousthings.com/t/hack-store-2-to-3-different-em41xx-on-a-single-t5577/12116
 
 ### T5577 Raw Writer
-
+An easy to use T5577 raw writer app for Flipper Zero
 https://lab.flipper.net/apps/t5577_writer
+https://github.com/zinongli/T5577_Raw_Writer
 
 ## Tools
 
