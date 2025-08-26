@@ -917,6 +917,10 @@ https://habr.com/ru/articles/795253/
 
 # Sub-GHZ Playlist
 
+Implements a plugin that processes a list of .sub files and sends them one by one.
+https://github.com/DarkFlippers/unleashed-firmware/pull/62
+
+
 # 125 kHz Rfid
 
 RFID – это технология для бесконтактных радио-меток, используемых повсюду: в домофонах, платежных картах, проездных, пропусках в офисы, для учета домашних животных, автомобилей и т.д. Есть два основных типа RFID меток, которые мы используем в обычной жизни: низкочастотные и высокочастотные.  
@@ -3337,6 +3341,21 @@ Other than showing the raw signal, ProtoView is able to decode a few interesting
 
 https://lab.flipper.net/apps/protoview
 
+### Radio Scanner
+Sub-GHz Radio Scanner with audio output to internal speaker
+https://lab.flipper.net/apps/radio_scanner
+
+### Rolling Flaws
+[YouTube demo](https://youtu.be/gMnGuDC9EQo?si=4HLZpkC4XWhh97uQ) of using Rolling Flaws application. The video shows how to use the application to simulate a receiver that has a Replay attack flaw, Pairing FZ to a receiver, Cloning sequence attack, Future attack, Rollback attack & KGB attack.
+https://github.com/jamisonderek/flipper-zero-tutorials/tree/main/subghz/apps/rolling-flaws
+
+### ShapShup
+application for viewing SubGhz RAW files in the form of a signal level as it is shows in SubGHz RAW read mode.
+https://github.com/derskythe/flipperzero-shapshup
+
+### Sub-GHz bruteforcer
+Брутфорс Sub-Ghz
+https://github.com/derskythe/flipperzero-subbrute
 
 ## Tools
 
