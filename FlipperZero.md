@@ -3230,6 +3230,11 @@ for reading credential from HID iClass, iClass SE, MFC SE, Desfire EV1/EV2, and 
 Requires addon: UART to mini-SIM adapter and HID SAM.  
 See full readme for wiring and more information: [https://github.com/bettse/seader/blob/main/readme.md](https://github.com/bettse/seader/blob/main/readme.md)
 
+### Seos compatible
+Seos compatible reader/emulator
+**The app uses all zero keys by default**. It uses an ADF OID of 030107090000000000 ("0.3.1.7.9.0.0.0.0.0").  
+If you'd like to use your own keys/ADF OID, use the format of the 'keys-example.txt' to specify them, and place into 'SD Card/apps_data/seos/keys.txt'
+https://lab.flipper.net/apps/seos
 
 
 ## Tools
