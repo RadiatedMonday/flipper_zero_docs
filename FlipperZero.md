@@ -3316,6 +3316,12 @@ This application extracts the codes from a Genie garage door remote into a .GNE 
 https://lab.flipper.net/apps/genie_record
 
 ### Restaurant Pager Trigger
+запускает уведомления на пейджеры на фудкортах
+https://github.com/UberGuidoZ/Flipper/tree/main/Sub-GHz/Restaurant_Pagers
+
+### POCSAG Pager
+захватывает сообщения пейджингового протокола POCSAG 1200 на поддерживаемых частотах CC1101 
+https://lab.flipper.net/apps/pocsag_pager
 
 
 ## Tools
