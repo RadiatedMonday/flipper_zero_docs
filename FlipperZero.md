@@ -3396,7 +3396,8 @@ https://lab.flipper.net/apps/weather_station
 ## Tools
 
 ### Analog Clock
-todo
+Аналоговые часы
+https://lab.flipper.net/apps/analog_clock
 
 ### Barcode App
 todo
