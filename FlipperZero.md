@@ -3558,10 +3558,19 @@ https://lab.flipper.net/apps/vin_decoder
 
 
 ### HID File Transfer
+application to transfer files using HID
+Необходим клиент (Windows/Linux) который идет в комплекте
+https://github.com/Kavakuo/HID-File-Transfer
 
 ### Mass Storage
+This application allows you to use your Flipper Zero as a (very slow) USB mass storage device. You can create a disk image of up to 64MB, and then format and mount it on your computer via USB. All the images are stored on the SD card, which allows you to have multiple images and switch between them.
+https://lab.flipper.net/apps/mass_storage
 
 ### USB Consumer Control
+This is a Flipper Zero application for sending Consumer Control Button (CCB) presses as a USB HID device. This is useful for researching how various devices handle USB CCBs, for example in the context of kiosk breakouts.
+
+A more detailed writeup of the topic can be found [here](https://github.com/piraija/usb-hid-and-run)
+https://lab.flipper.net/apps/usb_ccb
 
 ### USB HID Autofire
 
