@@ -3400,16 +3400,20 @@ https://lab.flipper.net/apps/weather_station
 https://lab.flipper.net/apps/analog_clock
 
 ### Barcode App
-todo
+Генератор Штрих-кода
+https://lab.flipper.net/apps/barcode_app
 
 ### Brainfuck
-todo
+Brainfuck language interpreter
+https://lab.flipper.net/apps/brainfuck
 
 ### Caesar Cipher
-todo
+Encrypt and decrypt text using Caesar Cipher
+https://lab.flipper.net/apps/caesar_cipher
 
 ### Calculator
-todo
+простой калькулятор
+https://lab.flipper.net/apps/calculator
 
 ### Calendar
 todo
