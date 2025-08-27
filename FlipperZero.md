@@ -3434,12 +3434,6 @@ Cryptocurrency wallet with support for BTC, ETH, DOGE, and ZEC (t-addr)
 https://lab.flipper.net/apps/flipbip
 https://github.com/xtruan/FlipBIP
 
-### Flipp Pomodoro
-todo
-
-### Chronometer
-todo
-
 ### Ford Radio Codes
 todo
 
