@@ -3491,6 +3491,26 @@ todo
 ### Quac!
 todo
 
+### Resistance calculator
+todo
+
+### SD Info
+todo
+
+### Segnent Clock
+todo
+
+### Text Viewer
+todo
+
+### Tone Generator
+todo
+
+### Authenticator
+todo
+
+### uPython
+
 
 
 ---
