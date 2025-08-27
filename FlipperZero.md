@@ -3415,23 +3415,14 @@ https://lab.flipper.net/apps/caesar_cipher
 простой калькулятор
 https://lab.flipper.net/apps/calculator
 
-### Calendar
-todo
-
-### Clock
-todo
-
-### Count Down Timer
-todo
-
-### Counter
-todo
 
 ### DCF77 Transmitter
-todo
+Sends the DCF77 time signal (badly) on the 125khz LFRFID antenna and on GPIO C3 pin
+https://lab.flipper.net/apps/dcf77
 
 ### DCF77 Clock Spoof
-todo
+Spoof a DCF77 time signal with a selectable time on the RFID antenna and the A4 GPIO pin
+https://lab.flipper.net/apps/dcf77_clock_spoof
 
 ### DTMF Dolphin
 todo
