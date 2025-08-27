@@ -3417,18 +3417,21 @@ https://lab.flipper.net/apps/calculator
 
 
 ### DCF77 Transmitter
-Sends the DCF77 time signal (badly) on the 125khz LFRFID antenna and on GPIO C3 pin
+Sends the [DCF77](https://ru.wikipedia.org/wiki/DCF77) time signal (badly) on the 125khz LFRFID antenna and on GPIO C3 pin
 https://lab.flipper.net/apps/dcf77
 
 ### DCF77 Clock Spoof
-Spoof a DCF77 time signal with a selectable time on the RFID antenna and the A4 GPIO pin
+Spoof a [DCF77](https://ru.wikipedia.org/wiki/DCF77) time signal with a selectable time on the RFID antenna and the A4 GPIO pin
 https://lab.flipper.net/apps/dcf77_clock_spoof
 
 ### DTMF Dolphin
-todo
+DTMF (Dual-Tone Multi-Frequency) dialer, Bluebox, and Redbox.
+https://lab.flipper.net/apps/dtmf_dolphin
 
 ### FlipBIP Crypto Wallet
-todo
+Crypto wallet for Flipper
+Cryptocurrency wallet with support for BTC, ETH, DOGE, and ZEC (t-addr)
+https://lab.flipper.net/apps/flipbip
 
 ### Flipp Pomodoro
 todo
