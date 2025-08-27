@@ -3503,7 +3503,8 @@ Press "**M**" to cycle through and select the conversion mode you need.
 https://lab.flipper.net/apps/programmercalc
 
 ### QR Code
-todo
+Display qrcodes on the Flipper Zero
+https://github.com/bmatcuk/flipperzero-qrcode
 
 ### Quac!
 todo
