@@ -3435,13 +3435,16 @@ https://lab.flipper.net/apps/flipbip
 https://github.com/xtruan/FlipBIP
 
 ### Ford Radio Codes
-todo
+Коды разблокировки магнитол ford
+https://lab.flipper.net/apps/fordradiocode
 
 ### HEX Editor
-todo
+Read text files line by line and edit them without a computer or smartphone.
+https://lab.flipper.net/apps/hex_editor
 
 ### HEX Viewer
-todo
+App allows to view various files as HEX
+https://lab.flipper.net/apps/hex_viewer
 
 ### Key Copier
 
@@ -3457,11 +3460,6 @@ https://github.com/ervanalb/keygen
 
 ![[key_copy.mp4]]
 
-### Multi Converter
-todo
-
-### Multi Counter
-todo
 
 ### RFID detector
 todo
