@@ -3518,16 +3518,9 @@ https://lab.flipper.net/apps/quac
 Калькулятор сопротивлений
 
 ### SD Info
-todo
+The application shows information about the SD card and you can also perform a test that will show the card status.
+https://github.com/Sladkisnovraper/SD-Info-For-Flipper-Zero
 
-### Segnent Clock
-todo
-
-### Text Viewer
-todo
-
-### Tone Generator
-todo
 
 ### Authenticator
 todo
