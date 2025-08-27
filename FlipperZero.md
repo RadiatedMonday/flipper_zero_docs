@@ -3514,7 +3514,8 @@ The app does not provide any recording functionality - you can use the existing 
 https://lab.flipper.net/apps/quac
 
 ### Resistance calculator
-todo
+![[resist.png]]
+Калькулятор сопротивлений
 
 ### SD Info
 todo
