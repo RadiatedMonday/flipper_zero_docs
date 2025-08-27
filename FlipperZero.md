@@ -3523,10 +3523,14 @@ https://github.com/Sladkisnovraper/SD-Info-For-Flipper-Zero
 
 
 ### Authenticator
-todo
+Software-based TOTP/HOTP authenticator
+https://lab.flipper.net/apps/totp
 
 ### uPython
-todo
+Compile and execute MicroPython scripts
+MicroPython is a version of the popular Python programming language, especially tailored for the hardware requirements of small microcontrollers, like the Flipper Zero.  
+Instead of supporting the full standard library, only a subset is implemented, carefully selected with the requirements of a microcontroller environment in mind.
+https://lab.flipper.net/apps/upython
 
 ### VIN decoder
 todo
