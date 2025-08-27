@@ -3573,9 +3573,12 @@ A more detailed writeup of the topic can be found [here](https://github.com/pir
 https://lab.flipper.net/apps/usb_ccb
 
 ### USB HID Autofire
+This is a simple Flipper Zero application to send left-clicks as a USB HID device.
+кликер
+https://github.com/pbek/usb_hid_autofire
 
 ### USB Game Controller
-
+An app that emulates XInput controllers
 
 
 
