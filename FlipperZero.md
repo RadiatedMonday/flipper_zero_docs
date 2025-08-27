@@ -3462,10 +3462,12 @@ https://github.com/ervanalb/keygen
 
 
 ### RFID detector
-todo
+Identify the reader type: NFC (13 MHz) and/or RFID (125 KHz).
+https://lab.flipper.net/apps/nfc_rfid_detector
 
 ### NickName Generator
-todo
+Генератор никнеймов
+https://github.com/disaxq/Nickname-Generator
 
 ### Nightstand Clock
 todo
