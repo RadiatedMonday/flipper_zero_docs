@@ -3507,7 +3507,11 @@ Display qrcodes on the Flipper Zero
 https://github.com/bmatcuk/flipperzero-qrcode
 
 ### Quac!
-todo
+Quick Action remote control app
+This app allows you to organize previously recorded signals, of any type, so that you can quickly and easily play them back. No more needing to recall whether that door is Sub-GHz or RFID! Just navigate to that action in **Quac** and press OK to send!
+
+The app does not provide any recording functionality - you can use the existing Flipperzero apps to create the saved files or import from existing files. Quac! provides some basic functionality to manage your files. Or, you can manage the folder structure manually on your SD card on your PC.
+https://lab.flipper.net/apps/quac
 
 ### Resistance calculator
 todo
