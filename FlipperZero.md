@@ -3533,7 +3533,9 @@ Instead of supporting the full standard library, only a subset is implemented, c
 https://lab.flipper.net/apps/upython
 
 ### VIN decoder
-todo
+![[vin_decod.png]]
+Vehicle Identification Number decoder
+https://lab.flipper.net/apps/vin_decoder
 
 ## USB
 
