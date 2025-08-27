@@ -3579,7 +3579,7 @@ https://github.com/pbek/usb_hid_autofire
 
 ### USB Game Controller
 An app that emulates XInput controllers
-
+https://lab.flipper.net/apps/xinput_controller
 
 
 ---
