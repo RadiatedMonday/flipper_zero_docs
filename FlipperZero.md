@@ -363,7 +363,7 @@ P.S. Флиппер хранит базу на карте и если карту
 ## Прошивка (Firmware)
 
 Перед прошивкой вставьте [[#Карта microSD|карту]]
-Прошивку можно обновить с помощью мобильного приложения или qFlipper.
+Прошивку можно обновить с помощью [[#Flipper Mobile App|мобильного приложения]] или qFlipper.
 
 Что касается выбора прошивки:
 По моему скромному мнению прошивка `Unleashed` - вне всякой конкуренции по стабильности и возможностям.
@@ -374,59 +374,15 @@ P.S. Флиппер хранит базу на карте и если карту
 
 Так что переходим в ТГ с релизами и качаем *Build with extra apps*
 
-### Mobile App
-App Store: https://apps.apple.com/app/flipper-mobile-app/id1534655259
-Google Play: https://play.google.com/store/apps/details?id=com.flipperdevices.app
-
-#### Подключение телефона к Flipper Zero
-
-1. Активируйте Bluetooth на своем телефоне.
-2. Активируйте Bluetooth на своем Flipper Zero:
-    - Перейдите в **Main Menu** **-> Settings** **->** **Bluetooth**.
-    - Переключите **Bluetooth** в **ON**
-3. В мобильном приложении нажмите **Connect**.
-4. На следующем экране нажмите **Connect** напротив найденного флиппера
-
-![[flipper-mobile-app-bluetooth-connection.webp]]
-
-5. В мобильном приложении Flipper введите код сопряжения, который отображается на экране Flipper Zero.
-6. Нажмите на **Pair**, чтобы завершить сопряжение.
-
-##### Если флиппер не обнаруживается:
-- Проверяем что bluetooth на флиппере включен
-- Проверяем что bluetooth на телефоне включен
-- Проверяем что мобильное приложение последней версии
-- [[#Перезагрузка|Перезагружаем]] flipper
-- Если не помогает, заставляем флиппер забыть все устройства (Unpair All Devices в Settings)
-![[flipper-zero-bluetooth-settings.webp]]
-- Если ничего не помогло, обновляем через [[#qFlipper]]
-
-
-#### Обновление прошивки в мобильном приложении
-1. На главном экране нажмите на строку "Update Channel"
-2. Выберите "Custom"
-
-![[Custom_update.jpg]]
-
-3. Нажмите "`CHOOSE FILE`" и выберите tgz файл прошивки и update
-
-Процесс обновления займет около 10 минут
-![[update_proc.jpg]]
-
-### Обновление через qFlipper
-
-![[qflipper_update.webp]]
-
-Обновление описано в соответствующем [[#qFlipper|разделе]]
-
-### Internal storage is full
+### Возможные проблемы:
+#### Internal storage is full
 
 ![[internal-storage.webp]]
 
 1. Сделать бекап [[#Backup|через qFlipper]]
 2. Сбросить до заводских
   
-#### через Settings
+через Settings:
 
 ![[factory_reset_settings.png]]
 
@@ -437,7 +393,7 @@ Press **Erase** five times.
 ![[Factory_Reset_compressed.mp4]]
 
 
-#### через qFlipper
+через qFlipper:
 
 Запускаем **qFlipper**.
 Подключаем Flipper Zero USB кабелем.
@@ -3592,46 +3548,34 @@ https://lab.flipper.net/apps/xinput_controller
 
 With **Flipper Mobile App**, you can remotely control and update your Flipper Zero, share saved keys, manage and edit data, and more. Flipper Mobile App enhances the functionality of your Flipper Zero, making it even more convenient to use.
 
-The application is available on iOS and Android:
-https://apps.apple.com/app/flipper-mobile-app/id1534655259
-https://play.google.com/store/apps/details?id=com.flipperdevices.app
+App Store: https://apps.apple.com/app/flipper-mobile-app/id1534655259
+Google Play: https://play.google.com/store/apps/details?id=com.flipperdevices.app
 
-## Connecting to Flipper Zero
+## Подключение телефона к Flipper Zero
 
-After you download Flipper Mobile App and activate Bluetooth on your phone, you need to connect the mobile application to your Flipper Zero:
-
-1. Activate Bluetooth on your Flipper Zero by following these steps:
-
-    1) Go to **Main Menu** **-> Settings** **->** **Bluetooth**.
-    2) Set **Bluetooth** to **ON**.
-
-2. In Flipper Mobile App, tap **Connect**.
-
-3. On the next page, next to the detected Flipper Zero’s name, tap **Connect**.
+1. Активируйте Bluetooth на своем телефоне.
+2. Активируйте Bluetooth на своем Flipper Zero:
+    - Перейдите в **Main Menu** **-> Settings** **->** **Bluetooth**.
+    - Переключите **Bluetooth** в **ON**
+3. В мобильном приложении нажмите **Connect**.
+4. На следующем экране нажмите **Connect** напротив найденного флиппера
 
 ![[mobile2.webp]]
 
 
-4. In Flipper Mobile App, **enter the pairing code** displayed on the Flipper Zero screen.
+5. В мобильном приложении Flipper введите код сопряжения, который отображается на экране Flipper Zero.
+6. Нажмите на **Pair**, чтобы завершить сопряжение.
 
-5. Tap **Pair** to finalize pairing.
+### Если флиппер не обнаруживается:
 
-6. Wait until Flipper Mobile App is done synchronizing with your Flipper Zero.
+- Проверяем что bluetooth на флиппере включен
+- Проверяем что bluetooth на телефоне включен
+- Проверяем что мобильное приложение последней версии
+- [[#Перезагрузка|Перезагружаем]] flipper
+- Если не помогает, заставляем флиппер забыть все устройства (Unpair All Devices в Settings, см. рисунок)
+- Если ничего не помогло, обновляем через [[#qFlipper]]
+   ![[flipper-zero-bluetooth-settings.webp]]
 
-### If your Flipper Zero is not detected
-
-- Make sure Bluetooth is activated on your Flipper Zero. -> [How to turn on Bluetooth on Flipper Zero](https://docs.flipperzero.one/basics/settings#eJsLP "How to turn on Bluetooth on Flipper Zero").
-    
-- Check the Bluetooth connection on your phone.
-    
-- Disconnect Flipper Zero from other devices. -> [How to forget all paired devices on Flipper Zero](https://docs.flipperzero.one/basics/settings#eJsLP "How to forget all paired devices on Flipper Zero").
-    
-- Update Flipper Zero to the latest firmware version. It is important to update your Flipper Zero regularly. -> [How to update the firmware on Flipper Zero](https://docs.flipperzero.one/basics/firmware-update "How to update the firmware on Flipper Zero").
-    
-- Check the latest version of Flipper Mobile App is installed on your phone. -> [App Store](https://apps.apple.com/us/app/flipper-mobile-app/id1534655259 "App Store") or [Google Play](https://play.google.com/store/apps/details?id=com.flipperdevices.app "Google Play").
-    
-- Reboot your Flipper Zero by pressing and holding the **LEFT** and **BACK** buttons for 5 seconds.
-    
 
 ### If Flipper Mobile App fails to synchronize with your Flipper Zero
 
@@ -3682,6 +3626,18 @@ In the **Apps** tab, you can access the catalog of community-developed apps and 
 In the **Tools** tab, you’ll find tools that expand Flipper Zero functionality, such as Mfkey32 (Extract MF Keys) for calculating MIFARE Classic keys, and Remotes Library for getting access to a wide range of infrared remotes. These tools are developed and maintained by our team.
 
 ![[mo.webp]]
+
+## Обновление прошивки в мобильном приложении
+
+1. На главном экране нажмите на строку "Update Channel"
+2. Выберите "Custom"
+
+![[Custom_update.jpg]]
+
+3. Нажмите "`CHOOSE FILE`" и выберите tgz файл прошивки и update
+
+Процесс обновления займет около 10 минут
+![[update_proc.jpg]]
 
 
 
