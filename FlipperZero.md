@@ -410,14 +410,13 @@ Press **Erase** five times.
 
 
 
-### Firmware Recovery
+#### Firmware Recovery
 
 Испорченную прошивку можно исправить с помощью [[#qFlipper]] и встроенного USB Device Firmware Update (DFU) загрузчика.
 
 ![[firmware_repair.png]]
 
-#### Переключаемся в Recovery
-##### Если девайс работает но не обновляется
+##### Переключаемся в Recovery, если девайс работает но не обновляется
 
 Переключаем Flipper Zero в Recovery mode:
 
@@ -442,7 +441,7 @@ Press **Erase** five times.
 
 Чтобы выйти из режима Recovery зажимаем `LEFT` и `BACK` 
 
-##### Если девайс окирпичен:
+##### Переключаемся в Recovery, если девайс окирпичен:
 
 1. Отключите USB-кабель от устройства Flipper Zero, если оно подключено.
 2. Нажмите и удерживайте кнопки `OK` и `BACK` в течение 30 секунд. Если на экране устройства Flipper Zero не отображается никаких указаний, это нормально.
@@ -457,11 +456,10 @@ Press **Erase** five times.
 - пробуем подключать без microsd карты
 - пробуем подключить в другой usb порт
 
-#### Repair
+##### Repair
 В qFlipper жмем `REPAIR`
 
 ![[qflipper_repair.webp]]
-
 
 
 ## Основной экран (Desktop)
