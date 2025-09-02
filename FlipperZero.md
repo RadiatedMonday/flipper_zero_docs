@@ -545,7 +545,9 @@ Press **Erase** five times.
 
 ![[tamagochi2.webp]]
 
-
+Кроме того, в приложениях для Флиппера есть несколько тематических игр:
+- [Matagotchi](https://lab.flipper.net/apps/matagotchi)
+- [Tamagotchi P1 Emulator](https://github.com/GMMan/flipperzero-tamagotch-p1)
 
 
 ## Питание
@@ -555,9 +557,8 @@ Flipper питается от 2100 mAh "lithium-ion polymer rechargeable battery
 
 ![[battery_info.webp]]
 
-### Выключение питания:
+### Выключение
 **Main Menu -> Settings -> Power -> Power OFF** 
-
 или зажать `OK` и `BACK`
 
 ### Sleep mode
@@ -567,7 +568,6 @@ Flipper питается от 2100 mAh "lithium-ion polymer rechargeable battery
 ![[sleep.png]]
 
 Доступны два режима ожидания: Default и Legacy. Энергопотребление в Default режиме составляет около 1,5 мА, что увеличивает время автономной работы. Однако при использовании этого режима могут возникать сбои в работе устройства. В Legacy режиме энергопотребление составляет 9 мА, что сокращает время автономной работы, но также повышает стабильность работы вашего устройства.
-
 
 Вы можете переключиться в Legacy спящий режим в настройках:
 **Main Menu -> Settings -> System** and setting **Sleep Method** to **Legacy**.
@@ -585,14 +585,12 @@ Flipper питается от 2100 mAh "lithium-ion polymer rechargeable battery
 
 Hard reboot - зажать `BACK` на 30 секунд
 
-Перезагрузка в recovery описана в [[#Переключаемся в Recovery|соответствующем разделе]]
+Перезагрузка в recovery описана в [[#Переключаемся в Recovery, если девайс работает но не обновляется|соответствующем разделе]]
 ```
 
 
 ## Settings (Настройки)
-
 **Main Menu ->** **Settings**
-
 ![[settings.webp]]
 
 ### Bluetooth
@@ -609,9 +607,8 @@ Hard reboot - зажать `BACK` на 30 секунд
 
 ### MicroSD card benchmark
 
-Не знаю зачем нужен бенчмарк в SPI режиме, но он есть
-
 ![[flipper-zero-microsd-card-benchmark.webp]]
+*Не знаю зачем нужен бенчмарк в SPI режиме, но он есть*
 
 ### Power
 
@@ -622,28 +619,24 @@ Hard reboot - зажать `BACK` на 30 секунд
 Тот самый раздел меню, где можно задать pin устройства, happy mode и изменить имя флиппера
 
 ![[flipper-zero-desktop-settings.webp]]
-
-P.S. Pin можно сбросить возвратом к заводским настройкам
-
+*Примечание: Pin можно сбросить возвратом к заводским настройкам*
 
 ### System settings
 
 ![[flipper-zero-system-settings.webp]]
 
 - Переключение для правшей/левшей
-- предпочитаемые единицы измерения.
-- форматы времени и даты.
-- насколько подробно будут отображаться записи в журналах.
-- режим отладки и анализ утечек памяти.
+- Предпочитаемые единицы измерения.
+- Форматы времени и даты.
+- Насколько подробно будут отображаться записи в журналах.
+- Режим отладки и анализ утечек памяти.
 - Отключение режима энергосбережения
-- настройки присвоения имен новым файлам
+- Настройки присвоения имен новым файлам
 
 #### Logs
-
 Сообщения журнала выводятся на консоль через UART, а также могут быть выведены в интерфейс командной строки (CLI) с помощью команды log.
 
-The following log level options are available:
-
+Доступны следующие уровни журналирования:
 - **Default:** equivalent to the Info log level.    
 - **None:** no events are logged.    
 - **Error:** only errors are logged.    
@@ -652,13 +645,12 @@ The following log level options are available:
 - **Debug:** errors, warnings, info, and debug messages are logged.    
 - **Trace:** errors, warnings, info, and debug messages are logged, as well as tracing information from various subsystems.
 
-```ad-important
+```ad-warning
 Чем более подробный лог ставим - тем медленнее работает флиппер
 ```
 
 
 #### Log Device
-
 - **USART:** uses pins 13 and 14. This option is set by default.    
 - **LPUART:** uses pins 15 and 16.    
 - **None:** disables logging via UART.
@@ -667,12 +659,11 @@ The following log level options are available:
 Включение режима обеспечивает дополнительные возможности отладки в приложениях Sub-GHz, 125 kHz RFID, NFC, и Infrared, а также новые команды в CLI. 
 Например, вы можете считывать raw данные низкочастотной RFID-карты, перейдя в Main Menu -> 125 kHz RFID -> Extra Actions -> Read RAW RFID data.
 
-
 Режим отладки также предоставляет доступ к интерфейсу отладки по SWD. Если вы отключите режим отладки на вашем Flipper Zero, SWD-интерфейс станет недоступен.
 
 
 #### Heap Trace
-журнал выделений и освобождений памяти, которые происходят в вашем Flipper Zero. Трассировка записывает информацию о каждом выделении, включая размер выделенного блока памяти, адрес блока памяти и время, в течение которого он был выделен. Трассировка кучи полезна для устранения проблем таких как утечки памяти. Сообщения журнала трассировки кучи выводятся на консоль через UART.
+Журнал выделений и освобождений памяти, которые происходят в вашем Flipper Zero. Трассировка записывает информацию о каждом выделении, включая размер выделенного блока памяти, адрес блока памяти и время, в течение которого он был выделен. Трассировка кучи полезна для устранения проблем таких как утечки памяти. Сообщения журнала трассировки кучи выводятся на консоль через UART.
 
 ### Expansion Modules
 Вы можете выбрать, какое оборудование UART будет использоваться для взаимодействия с внешними модулями
