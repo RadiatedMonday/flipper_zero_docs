@@ -2213,20 +2213,11 @@ https://t.me/flipperzero_unofficial_ru/37072
 
 # Bad USB
 TODO
-https://habr.com/ru/articles/767996/
-https://github.com/UNC0V3R3D/Flipper_Zero-BadUsb
-https://github.com/aleff-github/my-flipper-shits/
-https://github.com/I-Am-Jakoby/Flipper-Zero-BadUSB
-https://github.com/FalsePhilosopher/badusb
-https://github.com/FalsePhilosopher/BadUSB-Playground/
-https://github.com/ooovenenoso/BadUSB-GPT
+
 https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/BadUSB-MarkCyber
 https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/Bombs
-https://github.com/nocomp/Flipper_Zero_Badusb_hack5_payloads
-https://github.com/grugnoymeme/flipperzero-badUSB
 https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/MacOS-narstybits
 https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/Zero-Lazagne
-https://github.com/atomiczsec/My-Payloads
 https://github.com/emptythevoid/flipperzero/tree/main/badusb
 https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/s4dic%20-%20BadUSB/passwordgrabber
 https://github.com/MarkCyber/BadUSB
