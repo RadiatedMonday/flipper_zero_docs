@@ -2210,18 +2210,7 @@ https://t.me/flipperzero_unofficial_ru/37072
 
 ---
 
-
 # Bad USB
-TODO
-
-https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/BadUSB-MarkCyber
-https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/Bombs
-https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/MacOS-narstybits
-https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/Zero-Lazagne
-https://github.com/emptythevoid/flipperzero/tree/main/badusb
-https://github.com/UberGuidoZ/Flipper/tree/main/BadUSB/s4dic%20-%20BadUSB/passwordgrabber
-https://github.com/MarkCyber/BadUSB
-
 
 
 Flipper Zero может выступать в качестве устройства BadUSB, распознаваемого компьютерами как устройство интерфейса пользователя (HID), такое как клавиатура или даже мышь. Устройство BadUSB может изменять системные настройки, открывать бэкдоры, извлекать данные, запускать обратные оболочки или делать практически все, что может быть достигнуто с помощью физического доступа. Это делается путем выполнения набора команд, написанных на скриптовом языке Rubber Ducky, также известном как DuckyScript. Этот набор команд также называется полезной нагрузкой.
@@ -2274,9 +2263,9 @@ To turn your Flipper Zero into a BadUSB device using Bluetooth Low Energy, do th
 10. To unpair your Flipper Zero, go to **Config** and select **Remove Pairing**.
 
 
+---
+
 # U2F
-
-
 
 Flipper Zero может выступать в качестве универсального USB-токена аутентификации с использованием 2-го фактора (U2F) или ключа безопасности, который можно использовать в качестве второго фактора аутентификации при входе в веб-аккаунты. 
 
@@ -2314,7 +2303,7 @@ To sign in to your account with Flipper Zero, do the following:
 ![[omked.webp]]
 
 
-
+---
 
 # Apps
 
