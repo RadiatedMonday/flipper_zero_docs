@@ -1,7 +1,4 @@
-REM Author: 0xlunar
-REM Description: Activate Windows permanently with MAS
-REM Version: 1.1
-REM Category: GoodUSB
+REM Description: Activate with massgrave script
 DELAY 500
 GUI r
 DELAY 500
@@ -11,11 +8,11 @@ DELAY 1500
 SHIFT TAB
 DELAY 500
 ENTER
-DELAY 1500
-STRING irm https://massgrave.dev/get | iex
+DELAY 2000
+STRING irm https://get.activated.win | iex
 ENTER
 DELAY 4000
-STRING 1
+STRING 3
 DELAY 500
 STRING 1
 DELAY 500
