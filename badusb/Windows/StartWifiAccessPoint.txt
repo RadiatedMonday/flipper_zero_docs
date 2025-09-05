@@ -1,0 +1,16 @@
+REM Description: Start Wifi AP
+DELAY 750
+WINDOWS d
+DELAY 1500
+WINDOWS r
+DELAY 1500
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 750
+LEFTARROW
+ENTER
+DELAY 1200
+ALT y
+DELAY 1200
+STRING netsh wlan set hostednetwork ssid=WLAN key=PASSWORD;netsh wlan start hostednetwork; exit
+ENTER
