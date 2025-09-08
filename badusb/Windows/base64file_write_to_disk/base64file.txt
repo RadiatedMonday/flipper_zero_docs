@@ -1,9 +1,14 @@
 REM Base64 has to be broken up into chunks, otherwise Flipper crashes
 
 REM Encode file to base64. On Linux: 
-REM cat file.txt | base64 -w 0 > encoded.txt 
+REM cat file.txt | base64 -w 0 > encoded.txt
 REM and then to prepend STRING to each line
-REM awk '{print "prefix" $0}' encoded.txt > encoded_string.txt
+REM cat encoded.txt | awk '{
+REM    for (i=1; i<=length($0); i+=76) {
+REM        printf "STRING %s\n", substr($0, i, 76)
+REM    }
+REM }' > encoded_string.txt
+
 REM then copy and paste, then remove the first STRING and replace with $b64="
 
 REM May need to uncomment and adjust per-line delay. Otherwise it may stumble over itself
