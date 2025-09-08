@@ -2273,7 +2273,7 @@ To turn your Flipper Zero into a BadUSB device using Bluetooth Low Energy, do th
 Но если у нас есть интернет и 15 секунд, то логичнее бы было залить с2-агента. Ну или хотя бы ПО для удаленного доступа.
 
 Вариант два: Вы хотите выдернуть инфу вот прямо сейчас. Тогда не стоит связываться с сетевой загрузкой вообще. Можно залить бинарники прямо через BadUSB, например с помощью base64, см. badusb/Windows/base64file_write_to_disk
-И результат получить обратно на то же устройство.см. badusb/Windows/save-to-flipper
+И результат получить обратно на то же устройство, см. badusb/Windows/save-to-flipper
 
 Для розыгрышей же вполне подойдут тематические сайты, развернутые на весь экран:
 For fake BSOD, Windows Update, Ransom screen, etc. go to https://fakeupdate.net
