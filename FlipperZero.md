@@ -979,9 +979,8 @@ Encryption protocol legend:
 ## Tesla
 На всех моделях теслы используется специальный нешифрованный сигнал для открытия лючка зарядки. Это сделано чтобы при приближении к зарядной станции, лючок автоматически открывался.
 
-Если вам охота побаловаться, скачайте .sub файлы отсюда:
-https://github.com/UberGuidoZ/Flipper/tree/main/Sub-GHz/Vehicles/Tesla
-Закиньте на Флиппер и запустите через [[#Sub-GHZ Playlist]]
+Если вам охота побаловаться, положите папку Tesla в папку subghz/ на карте памяти, файлик subghzplaylist/tesla.txt в папку subghzplaylist/
+И запустите через [[#Sub-GHZ Playlist]]
 
 ## Sub-GHz Jammer
 Можно использовать Флиппер в роли глушилки. Соответствующие файлы лежат тут:
@@ -990,7 +989,7 @@ https://github.com/RocketGod-git/Flipper_Zero/tree/main/subghz/Jamming
 
 ## Sub-GHZ Playlist
 
-Implements a plugin that processes a list of .sub files and sends them one by one.
+Проигрывает .sub файлы один за другим. files and sends them one by one.
 https://github.com/DarkFlippers/unleashed-firmware/pull/62
 
 
