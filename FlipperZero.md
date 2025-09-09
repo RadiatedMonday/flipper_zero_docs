@@ -456,8 +456,9 @@ Flipper Zero поддерживает FAT12, FAT16, FAT32, и exFAT.
 - Карта не поддерживает SPI - меняем
 - Карта имеет неподдерживаемую файловую систему - форматируем
 
-**Main Menu -> Settings -> Storage**.
-Выбираем **Format SD Card** и жмем `RIGHT`.
+  **Main Menu -> Settings -> Storage**.
+  Выбираем **Format SD Card** и жмем `RIGHT`.
+  
 ![[flipper-zero-microsd-card-formatted.webp]]
 
 - А может у вас просто пыль в слоте.
