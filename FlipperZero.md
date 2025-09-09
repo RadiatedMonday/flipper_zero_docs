@@ -463,7 +463,7 @@ Flipper Zero поддерживает FAT12, FAT16, FAT32, и exFAT.
 
 - А может у вас просто пыль в слоте.
 
-P.S. Флиппер хранит базу на карте и если карту отформатировали - всегда придется [[#Прошивка (Firmware)|обновиться. ]]
+  P.S. Флиппер хранит базу на карте и если карту отформатировали - всегда придется [[#Прошивка (Firmware)|обновиться. ]]
 
 ### Безопасное извлечение
 
@@ -538,7 +538,7 @@ Press **Erase** five times.
 
 Переключаем Flipper Zero в Recovery mode:
 
-1.  **Main Menu -> Settings -> Power**.
+1. **Main Menu -> Settings -> Power**.
 2. **Reboot -> Firmware Upgrade**.
 3. `RIGHT` to reboot.
 
@@ -651,7 +651,7 @@ Press **Erase** five times.
 
 ![[quick-access-apps-desktop-1.webp]]
 
-Переназначить можно через  **Main Menu -> Settings -> Desktop  -> Set Quick Access Apps**.
+Переназначить можно через  **Main Menu -> Settings -> Desktop  -> Set Quick Access Apps**
 
 
 ## Функционал Тамагочи
@@ -849,7 +849,7 @@ Hard reboot - зажать `BACK` на 30 секунд
 **Main Menu -> Sub-GHz**.
 - **Read** — to listen only.
   _or_
--  **Read RAW** — to listen and record.
+- **Read RAW** — to listen and record.
   
 Go to **Config**.
 Set **Frequency** to the frequency of the walkie-talkie you want to listen to.
