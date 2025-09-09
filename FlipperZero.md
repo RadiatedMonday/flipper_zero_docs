@@ -2384,6 +2384,9 @@ Flipper Application for monitoring PC resources
 ## GPIO
 
 todo add apps https://lab.flipper.net/apps/category/gpio
+### 401/DigiLab
+Companion app for Lab401's Digilab accessory. The Digilab is hardware module that allows you to explore electronic circuits with a strong emphasis on sensory feedback.
+https://lab.flipper.net/apps/401_digilab
 
 ### BMI Air Mouse
 
