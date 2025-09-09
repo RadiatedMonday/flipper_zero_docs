@@ -2383,10 +2383,18 @@ Flipper Application for monitoring PC resources
 
 ## GPIO
 
-todo add apps https://lab.flipper.net/apps/category/gpio
+### Atari SIO Emulator
+emulates SIO peripherals for Atari 8-bit computers, currently featuring floppy drive emulation, direct XEX executable loading and Atari 850 modem emulation.
+https://lab.flipper.net/apps/sio2flip
+
 ### 401/DigiLab
 Companion app for Lab401's Digilab accessory. The Digilab is hardware module that allows you to explore electronic circuits with a strong emphasis on sensory feedback.
 https://lab.flipper.net/apps/401_digilab
+
+### Lab401/Light Messenger
+Companion app for Lab401's Light Messenger accessory. The Light Messenger is hardware module that allows you to draw, write and lightpaint in the air using a 16 RGB Led array and an accelerometer.
+https://lab.flipper.net/apps/401_light_msg
+
 
 ### BMI Air Mouse
 
@@ -2590,6 +2598,8 @@ To use your Flipper as a USB-to-GPIO/SPI/UART adapter:
 Pwnagotchi использует Raspberry Pi Zero W и специально настроенное программное обеспечение, которое позволяет устройству автоматически сканировать и анализировать ближайшие беспроводные сети Wi-Fi.
 
 В своей традиционной модификации понагочи не имеет кнопок и иных физических элементов управления. После загрузки переходит в режим мониторинга, сканирует эфир и в момент подключения клиента к точке доступа, перехватывает и сохраняет на microSD карту файл с пакетами аутентификации (так называемый 4-way handshake). Если зверёк видит пару клиент-точка, то применяет атаку деаутентификации, с последующим перехватом хендшейка в момент обратного подключения клиента.
+
+
 
 ### \[J305\]Atomic Dice Roller
 
@@ -2811,6 +2821,10 @@ https://github.com/zacharyweiss/magspoof_flipper
 Measuring carbon dioxide (CO2) with mh-z19
 https://lab.flipper.net/apps/mh_z19
 
+### CO2 Logger
+App for reading CO2 ppm from MH-Z19 sensor and saving to a local csv file.
+https://lab.flipper.net/apps/co2_logger
+
 ### NRF24
 Приложения для модуля [[#Радиомодуль 2.4 ГГц NRF24L01 Mouse Hunter]] :
 - \[NRF24\] Batch
@@ -3011,6 +3025,10 @@ Modified by privet971 using PING))) sensor from Parallax 3/23/2023
 Use only gpio 13 for TX & RX wired to SIG pin
 
 https://github.com/privet971/FlipperZeroApps/tree/main/usping
+
+### UV Meter
+Measure UV radiation using the AS7331 sensor
+https://lab.flipper.net/apps/uv_meter_as7331
 
 ### WHC SWIO Flasher
 
