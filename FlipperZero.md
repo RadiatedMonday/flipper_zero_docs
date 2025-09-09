@@ -3966,6 +3966,9 @@ chmod +x qFlipper-x86_64-1.3.3.AppImage
 
 # Разработка
 
+Веб-редактор интерфейса утилит для Flipper Zero: https://lopaka.app/
+
+
 
 ## "Hello world"
 ### Шаг первый: учимся собирать прошивку
@@ -4001,11 +4004,8 @@ https://docs.flipper.net/development
 https://yakovlev.me/hello-flipper-zero/
 https://habr.com/ru/articles/594895/
 https://habr.com/ru/articles/710700/
-https://habr.com/ru/news/706238/
-https://habr.com/ru/articles/700378/
 https://habr.com/ru/companies/sportmaster_lab/articles/721000/
 https://habr.com/ru/companies/selectel/articles/742438/
-https://habr.com/ru/articles/744476/
 https://habr.com/ru/articles/742428/
 https://habr.com/ru/companies/ruvds/articles/768658/
 
