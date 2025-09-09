@@ -2493,6 +2493,11 @@ Settings:
 *взлом древних кофе-автоматов, принимающих аппаратный "pen"*
 https://medium.com/@wh00hw/vendors-still-allow-you-to-hack-the-vending-machine-34ddad81dbad
 
+### CAN-FD-HS
+This software implements an USB to CAN bridge compatible with Linux can-utils and slcan driver.
+needs SERMA CAN FD board to be plugged in GPIOs ports
+https://lab.flipper.net/apps/canfdhs
+
 ###  RC2014 ColecoVision
  application and [RC2014](https://rc2014.co.uk/) module allowing the Flipper to be used as a controller for ColecoVision games on the [RC2014](https://rc2014.co.uk/).
 
@@ -2586,6 +2591,10 @@ To use your Flipper as a USB-to-GPIO/SPI/UART adapter:
 2. Connect your Flipper to your PC via USB. The FlipTDI device will be detected    
 3. Follow the instructions for the PC software you want to use with the adapter
 
+### FlipRPI
+Use your Flipper Zero to control your Raspberry Pi.
+https://lab.flipper.net/apps/flip_rpi
+
 ### Flipagotchi
 
 > Displays the screen of the Pwnagotchi on the Flipper's screen. Interfaces over UART with a Raspberry Pi Zero W running the Pwnagotchi program.
@@ -2598,6 +2607,7 @@ To use your Flipper as a USB-to-GPIO/SPI/UART adapter:
 Pwnagotchi использует Raspberry Pi Zero W и специально настроенное программное обеспечение, которое позволяет устройству автоматически сканировать и анализировать ближайшие беспроводные сети Wi-Fi.
 
 В своей традиционной модификации понагочи не имеет кнопок и иных физических элементов управления. После загрузки переходит в режим мониторинга, сканирует эфир и в момент подключения клиента к точке доступа, перехватывает и сохраняет на microSD карту файл с пакетами аутентификации (так называемый 4-way handshake). Если зверёк видит пару клиент-точка, то применяет атаку деаутентификации, с последующим перехватом хендшейка в момент обратного подключения клиента.
+
 
 
 
