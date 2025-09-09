@@ -989,7 +989,7 @@ https://github.com/RocketGod-git/Flipper_Zero/tree/main/subghz/Jamming
 
 ## Sub-GHZ Playlist
 
-Проигрывает .sub файлы один за другим. files and sends them one by one.
+Проигрывает .sub файлы один за другим. в качестве примера см. [[#Tesla]]
 https://github.com/DarkFlippers/unleashed-firmware/pull/62
 
 
