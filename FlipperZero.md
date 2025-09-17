@@ -986,6 +986,9 @@ Encryption protocol legend:
 Можно использовать Флиппер в роли глушилки. Соответствующие файлы лежат тут:
 https://github.com/RocketGod-git/Flipper_Zero/tree/main/subghz/Jamming
 
+Для большего удобства есть приложение RF Jammer
+https://github.com/RocketGod-git/flipper-zero-rf-jammer
+
 
 ## Sub-GHZ Playlist
 
@@ -2956,6 +2959,10 @@ https://lab.flipper.net/apps/co2_logger
 - \[NRF24\] Sniffer MS
 - \[NRF24\] Channel Scanner
 - \[NRF24\] Tool
+
+#### nRF24 Jammer
+
+https://github.com/huuck/FlipperZeroNRFJammer
 
 ### Pokemon Trade Tool
 
