@@ -2961,7 +2961,7 @@ https://lab.flipper.net/apps/co2_logger
 - \[NRF24\] Tool
 
 #### nRF24 Jammer
-
+Глушилка bluetooth и вообще всего что в 2.4 Ггц диапазоне
 https://github.com/huuck/FlipperZeroNRFJammer
 
 ### Pokemon Trade Tool
